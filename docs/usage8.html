@@ -1,0 +1,534 @@
+<html>
+  <head>
+   <title>GCALDaemon - Setup Gmail notifier</title>
+   <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+   <meta name="keywords"           content="google calendar,ical,icalendar,calendar,sync,synchronize,two-way,bidirectional">
+   <link rel="alternate"     href="http://sourceforge.net/export/rss2_projnews.php?group_id=184382" type="application/rss+xml" title="GCALDaemon News"/>
+   <link rel="stylesheet"    href="stylesheet.css" type="text/css"/>
+   <link rel="icon"          href="favicon.ico"    type="image/x-icon"/>
+   <link rel="shortcut icon" href="favicon.ico"    type="image/x-icon"/>
+  </head>
+  <body topmargin="0" marginwidth="0" marginheight="0" leftmargin="0" bgcolor="#0C3400" link="#000000" vlink="#000000" background="images/raster.gif">
+    <table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0">
+
+      <tr bgcolor="black" height="40">
+        <td background="images/greenline.gif">
+          <table width="99%" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+              <td width="180">
+                <a href="http://gcaldaemon.sourceforge.net"><img src="images/logo.gif" width="180" height="40" alt="GCALDaemon Project Home" border="0"></a>
+              </td>
+              <td width="100%" align="right" valign="top">
+                <font class="bar">
+                  <a href="http://gcaldaemon.sourceforge.net" class="menu" title="Project Home of Google Calendar Synchronizer Daemon">
+                  home
+                  </a>
+                  |
+                  <a href="http://sourceforge.net/forum/?group_id=184382" class="menu" title="Forums to discuss your technical problems">
+                  forums
+                  </a>
+                  |
+                  <a href="http://sourceforge.net/sendmessage.php?touser=1664061" class="menu" title="Contact Us">
+                  contact
+                  </a>
+                  |
+                  <a href="http://sourceforge.net/export/rss2_projnews.php?group_id=184382" class="menu" title="Project News">
+                  rss
+                  </a>
+                  |
+                  <a href="http://sourceforge.net/project/stats/?group_id=184382&ugn=gcaldaemon" class="menu" title="Statistics">
+                  stats
+                  </a>
+                  |
+                  <a href="http://sourceforge.net/donate/index.php?group_id=184382" class="menu" title="Donations to GCALDaemon support the continues development of the project">
+                  donate
+                  </a>
+                </font>
+              </td>
+            </tr>
+          </table>
+       </td>
+      </tr>
+
+      <tr height="25">
+       <td>
+
+          <table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+              <td width="150">
+              </td>
+              <td bgcolor="black">
+                <font class="title">
+                  <b><img src="images/empty.gif" width="1" height="25" align="absmiddle">
+
+::Usage
+
+                  </b>
+                </font>
+              </td>
+            </tr>
+          </table>
+
+       </td>
+      </tr>
+
+      <tr height="100%">
+        <td>
+
+          <table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+              <td width="150">
+
+               <table width="150" height="100%" cellspacing="0" cellpadding="0" border="0">
+                 <tr bgcolor="black">
+                   <td width="100%" align="right" bgcolor="black"><img src="images/empty.gif" width="1" height="25"><table width="125" cellspacing="0" cellpadding="0" border="0">
+
+<tr bgcolor="#009000">
+  <td valign="bottom" background="images/line.gif"><img src="images/tab.gif" width="5" height="25" align="absmiddle">
+    <a href="index.html" class="nav" title="Project Home of Google Calendar Synchronizer Daemon">
+      Home
+    </a>
+  </td>
+</tr>
+
+<tr bgcolor="#009000">
+  <td valign="bottom" background="images/line.gif"><img src="images/tab.gif" width="5" height="25" align="absmiddle">
+    <a href="features.html" class="nav" title="Learn about the key features included in GCALDaemon">
+      Features
+    </a>
+  </td>
+</tr>
+
+<tr bgcolor="#009000">
+  <td valign="bottom" background="images/line.gif"><img src="images/tab.gif" width="5" height="25" align="absmiddle">
+    <a href="screenshots.html" class="nav" title="Here are some screenshots of GCALDaemon in action">
+      Screenshots
+    </a>
+  </td>
+</tr>
+
+<tr bgcolor="#009000">
+  <td valign="bottom" background="images/line.gif"><img src="images/tab.gif" width="5" height="25" align="absmiddle">
+    <a href="download.html" class="nav" title="Downloads including source and documentation">
+      Downloads
+    </a>
+  </td>
+</tr>
+
+<tr bgcolor="white">
+  <td valign="bottom" background="images/line.gif"><img src="images/tab.gif" width="5" height="25" align="absmiddle">
+    <font class="plain">
+      User's Guide
+    </font>
+  </td>
+</tr>
+
+<tr bgcolor="#009000">
+  <td valign="bottom" background="images/line.gif"><img src="images/tab.gif" width="5" height="25" align="absmiddle">
+    <a href="integration.html" class="nav" title="Developer's Guide">
+      For Developers
+    </a>
+  </td>
+</tr>
+
+<tr bgcolor="#009000">
+  <td valign="bottom" background="images/line.gif"><img src="images/tab.gif" width="5" height="25" align="absmiddle">
+    <a href="license.html" class="nav" title="Apache License V2">
+      License
+    </a>
+  </td>
+</tr>
+
+                     </table><img src="images/empty.gif" width="1" height="25"></td>
+                 </tr>
+                 <tr height="100%"><td valign="bottom" align="center">
+<a href="http://sourceforge.net/donate/index.php?group_id=184382" title="Donations to GCALDaemon support the continues development of the project"><img src="images/support.gif" width="85" height="32" border="0"></a>
+                 </td></tr>
+               </table>
+  
+              </td>
+              <td bgcolor="white" valign="top">
+                <table border="0" cellpadding="10" cellspacing="0" width="100%" height="100%">
+                  <tr>
+                    <td valign="top">
+                      <font class="plain">
+
+<font class="header">
+  <img src="images/spot.gif" width="12" height="12" align="absmiddle">&nbsp;&nbsp;<b>Guides</b>
+</font>
+
+<ul>
+
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage10.html" class="link" title="XP installation guide">Installation on Windows NT/2000/XP</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage17.html" class="link" title="Vista guide">Installation on Windows Vista</a><br>
+
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage11.html" class="link" title="Linux installation guide">Installation on Linux/Unix/AIX</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage12.html" class="link" title="Mac OS X installation guide">Installation on Mac OS X</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage15.html" class="link" title="Servlet installation guide">Deploy on Apache Tomcat</a><br><br>
+
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage.html" class="link" title="Sync Google Calendar with Sunbird">Sync Google Calendar with Sunbird (HTTP-based synchronization)</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage13.html" class="link" title="Sync Google Calendar with iCal">Sync Google Calendar with Apple iCal (file-based synchronization)</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage16.html" class="link" title="Sync Google Calendar with Evolution">Sync Google Calendar with Evolution (file-based synchronization)</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage2.html" class="link" title="Sync Google Calendar with Rainlendar">Sync Google Calendar with Rainlendar (file-based synchronization)</a><br><br>
+
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage4.html" class="link" title="Import Gmail contacts via LDAP">Access Gmail contacts from Mozilla Thunderbird (LDAP server)</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage5.html" class="link" title="Import Gmail contacts via LDAP">Access Gmail contacts from Lotus Notes (LDAP server)</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage6.html" class="link" title="Import Gmail contacts via LDAP">Access Gmail contacts from Outlook Express (LDAP server)</a><br><br>
+
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="#top" class="link" title="Setup Gmail notifier">Setup Gmail notifier</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage9.html" class="link" title="Send text files via Gmail">Sending text and HTML files via Gmail (sendmail)</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage14.html" class="link" title="Execute scripts via email messages">Remote control your computer using Gmail (mailterm)</a><br>
+
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage3.html" class="link" title="Convert RSS/ATOM feed to ICS">Read RSS and ATOM feeds with your calendar application (feed converter)</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage7.html" class="link" title="Accelerating news readers">Caching RSS and ATOM news (feed cache)</a><br>
+
+</ul>
+
+<a name="top"></a>
+<font class="header">
+  <img src="images/spot.gif" width="12" height="12" align="absmiddle">&nbsp;&nbsp;<b>Setup Gmail notifier</b>
+</font>
+<ul>
+
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="#setup" class="link" title="Setup new mail motifier">Configure notifier service</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="#fine"  class="link" title="Fine adjustment">Fine adjustment</a>
+
+</ul>
+
+<p align="justify">
+The GCALDaemon's Gmail notifier is an application that alerts you when you have new incoming messages.
+It displays a window to let you know if you have unread mails,
+and shows you their senders, subjects and dates, all without your having to open your e-mail client.
+Notifier uses SSL to secure network traffic.
+</p>
+
+<p align="center">
+<img src="images/arch7.gif" width="500" height="196">
+</p>
+
+<a name="setup"></a>
+<font class="header">
+  <img src="images/spot.gif" width="12" height="12" align="absmiddle">&nbsp;&nbsp;<b>Configure notifier service</b>
+</font>
+
+<p align="left">
+
+1) <a href="usage10.html" class="nav">Install GCALDaemon (Java 1.5 required).</a><br><br>
+
+2) Start password encoder ('password-encoder.bat' or 'password-encoder.sh').
+Input your Gmail password and press ENTER. Copy the encoded password.
+</p>
+
+<p align="center">
+<img src="images/encoder.gif" width="549" height="210">
+</p>
+
+<p align="left">
+3) Edit the 'gcal-daemon.cfg' file with your text editor.<br><br>
+
+A) Set the 'notifier.enabled' property to 'true'<br>
+B) Set the 'notifier.google.username' property to your Gmail address<br>
+C) Set the 'notifier.google.password' property to your encoded password
+</p>
+
+<p align="center">
+<img src="images/notifier1.gif" width="586" height="270">
+</p>
+
+<p align="left">
+4) Setup finished - start GCALDaemon with 'standalone-start.bat' or 'standalone-start.sh'.
+</p>
+
+<p align="center">
+<img src="images/notifier2.gif" width="550" height="413">
+</p>
+
+<a name="fine"></a>
+<font class="header">
+  <img src="images/spot.gif" width="12" height="12" align="absmiddle">&nbsp;&nbsp;<b>Fine adjustment</b>
+</font>
+
+<p align="justify">
+1) The '<b>notifier.date.format</b>' property allows for formatting dates in a locale-sensitive manner.
+The format of the date is specified by a pattern string.
+Within the pattern string,
+unquoted letters from 'A' to 'Z' and from 'a' to 'z' are interpreted as pattern letters
+representing the components of a date or time string.
+Text can be quoted using single quotes (') to avoid interpretation. "''" represents a single quote.
+All other characters are not interpreted;
+they're simply copied into the output string during formatting or matched against the input string during parsing.
+The following pattern letters are defined (all other characters from 'A' to 'Z' and from 'a' to 'z' are reserved): 
+</p>
+
+<table border="1" width="90%" align="center" cellspacing="0">
+    <tr bgcolor="#EEEEEE">
+      <th align=left><font size="2" face="Arial,Helvetica">Letter</font></th>
+      <th align=left><font size="2" face="Arial,Helvetica">Date or Time Component</font></th>
+      <th align=left><font size="2" face="Arial,Helvetica">Examples</font></th>
+    </tr><tr>
+      <td><font size="2" face="Arial,Helvetica">G</font></td>
+      <td><font size="2" face="Arial,Helvetica">Era designator</font></td>
+      <td><font size="2" face="Arial,Helvetica">AD</font></td>
+    <tr >
+      <td><font size="2" face="Arial,Helvetica">y</font></td>
+      <td><font size="2" face="Arial,Helvetica">Year</font></td>
+      <td><font size="2" face="Arial,Helvetica">1996</font></td>
+    </tr><tr>
+      <td><font size="2" face="Arial,Helvetica">M</font></td>
+      <td><font size="2" face="Arial,Helvetica">Month in year</font></td>
+      <td><font size="2" face="Arial,Helvetica">July</font></td>
+    <tr >
+      <td><font size="2" face="Arial,Helvetica">w</font></td>
+      <td><font size="2" face="Arial,Helvetica">Week in year</font></td>
+      <td><font size="2" face="Arial,Helvetica">27</font></td>
+    </tr><tr>
+      <td><font size="2" face="Arial,Helvetica">W</font></td>
+      <td><font size="2" face="Arial,Helvetica">Week in month</font></td>
+      <td><font size="2" face="Arial,Helvetica">2</font></td>
+    <tr >
+      <td><font size="2" face="Arial,Helvetica">D</font></td>
+      <td><font size="2" face="Arial,Helvetica">Day in year</font></td>
+      <td><font size="2" face="Arial,Helvetica">189</font></td>
+    </tr><tr>
+      <td><font size="2" face="Arial,Helvetica">d</font></td>
+      <td><font size="2" face="Arial,Helvetica">Day in month</font></td>
+      <td><font size="2" face="Arial,Helvetica">10</font></td>
+    <tr >
+      <td><font size="2" face="Arial,Helvetica">F</font></td>
+      <td><font size="2" face="Arial,Helvetica">Day of week in month</font></td>
+      <td><font size="2" face="Arial,Helvetica">2</font></td>
+    </tr><tr>
+      <td><font size="2" face="Arial,Helvetica">E</font></td>
+      <td><font size="2" face="Arial,Helvetica">Day in week</font></td>
+      <td><font size="2" face="Arial,Helvetica">Tuesday</font></td>
+    <tr >
+      <td><font size="2" face="Arial,Helvetica">a</font></td>
+      <td><font size="2" face="Arial,Helvetica">Am/pm marker</font></td>
+      <td><font size="2" face="Arial,Helvetica">PM</font></td>
+    </tr><tr>
+      <td><font size="2" face="Arial,Helvetica">H</font></td>
+      <td><font size="2" face="Arial,Helvetica">Hour in day (0-23)</font></td>
+      <td><font size="2" face="Arial,Helvetica">0</font></td>
+    <tr >
+      <td><font size="2" face="Arial,Helvetica">k</font></td>
+      <td><font size="2" face="Arial,Helvetica">Hour in day (1-24)</font></td>
+      <td><font size="2" face="Arial,Helvetica">24</font></td>
+    </tr><tr>
+      <td><font size="2" face="Arial,Helvetica">K</font></td>
+      <td><font size="2" face="Arial,Helvetica">Hour in am/pm (0-11)</font></td>
+      <td><font size="2" face="Arial,Helvetica">0</font></td>
+    <tr >
+      <td><font size="2" face="Arial,Helvetica">h</font></td>
+      <td><font size="2" face="Arial,Helvetica">Hour in am/pm (1-12)</font></td>
+      <td><font size="2" face="Arial,Helvetica">12</font></td>
+    </tr><tr>
+      <td><font size="2" face="Arial,Helvetica">m</font></td>
+      <td><font size="2" face="Arial,Helvetica">Minute in hour</font></td>
+      <td><font size="2" face="Arial,Helvetica">30</font></td>
+    <tr >
+      <td><font size="2" face="Arial,Helvetica">s</font></td>
+      <td><font size="2" face="Arial,Helvetica">Second in minute</font></td>
+      <td><font size="2" face="Arial,Helvetica">55</font></td>
+    </tr><tr>
+      <td><font size="2" face="Arial,Helvetica">S</font></td>
+      <td><font size="2" face="Arial,Helvetica">Millisecond</font></td>
+      <td><font size="2" face="Arial,Helvetica">978</font></td>
+    <tr >
+      <td><font size="2" face="Arial,Helvetica">z</font></td>
+      <td><font size="2" face="Arial,Helvetica">Time zone</font></td>
+      <td><font size="2" face="Arial,Helvetica">Pacific Standard Time; PST; GMT-08:00</font></td>
+    </tr><tr>
+      <td><font size="2" face="Arial,Helvetica">Z</font></td>
+      <td><font size="2" face="Arial,Helvetica">Time zone</font></td>
+      <td><font size="2" face="Arial,Helvetica">-0800</font></td>
+    </tr>
+</table>
+
+<br>Examples:</br></br>
+
+<table border="1" width="90%" align="center" cellspacing="0">
+  <tr bgcolor="#EEEEEE">
+    <th align=left><font size="2" face="Arial,Helvetica">Date and Time Pattern</font></th>
+    <th align=left><font size="2" face="Arial,Helvetica">Result</font></th>
+  </tr><tr>
+    <td><font size="2" face="Arial,Helvetica">"yyyy.MM.dd G 'at' HH:mm:ss z"</font></td>
+    <td><font size="2" face="Arial,Helvetica">2001.07.04 AD at 12:08:56 PDT</font></td>
+  </tr><tr>
+    <td><font size="2" face="Arial,Helvetica">"EEE, MMM d, ''yy"</font></td>
+    <td><font size="2" face="Arial,Helvetica">Wed, Jul 4, '01</font></td>
+  </tr><tr>
+    <td><font size="2" face="Arial,Helvetica">"h:mm a"</font></td>
+    <td><font size="2" face="Arial,Helvetica">12:08 PM</font></td>
+  </tr><tr>
+    <td><font size="2" face="Arial,Helvetica">"hh 'o''clock' a, zzzz"</font></td>
+    <td><font size="2" face="Arial,Helvetica">12 o'clock PM, Pacific Daylight Time</font></td>
+  </tr><tr>
+    <td><font size="2" face="Arial,Helvetica">"K:mm a, z"</font></td>
+    <td><font size="2" face="Arial,Helvetica">0:08 PM, PDT</font></td>
+  </tr><tr>
+    <td><font size="2" face="Arial,Helvetica">"yyyyy.MMMMM.dd GGG hh:mm aaa"</font></td>
+    <td><font size="2" face="Arial,Helvetica">02001.July.04 AD 12:08 PM</font></td>
+  </tr><tr>
+    <td><font size="2" face="Arial,Helvetica">"EEE, d MMM yyyy HH:mm:ss Z"</font></td>
+    <td><font size="2" face="Arial,Helvetica">Wed, 4 Jul 2001 12:08:56 -0700</font></td>
+  </tr><tr>
+    <td><font size="2" face="Arial,Helvetica">"yyMMddHHmmssZ"</font></td>
+    <td><font size="2" face="Arial,Helvetica">010704120856-0700</font></td>
+  </tr><tr>
+    <td><font size="2" face="Arial,Helvetica">"yyyy-MM-dd'T'HH:mm:ss.SSSZ"</font></td>
+    <td><font size="2" face="Arial,Helvetica">2001-07-04T12:08:56.235-0700</font></td>
+  </tr>
+ </table>
+
+<p align="left">
+2) The '<b>notifier.window.style</b>' property allows for customizing the background of the notifier's window.
+There are ten built-in style in the application, but you can specify your own background image
+with the image's full path. Note: don't include backslash characters in the path. Example:
+
+<br><br><font face="Monospaced,Courier">
+notifier.window.style=C:/docs/images/notifier.gif
+</font><br><br>
+
+The image must be in GIF, JPG or PNG format at a resolution of <b>300</b> by <b>110</b> pixels.
+The built-in styles are the follows:
+</p>
+
+<p align="center">
+<img src="images/notifydefault.gif" width="300" height="110"><br><br>
+<i>notifier.window.style=default</i><br><br>
+
+<img src="images/notifymail.gif" width="300" height="110"><br><br>
+<i>notifier.window.style=mail</i><br><br>
+
+<img src="images/notifyblue.gif" width="300" height="110"><br><br>
+<i>notifier.window.style=blue</i><br><br>
+
+<img src="images/notifygray.gif" width="300" height="110"><br><br>
+<i>notifier.window.style=gray</i><br><br>
+
+<img src="images/notifygreen.gif" width="300" height="110"><br><br>
+<i>notifier.window.style=green</i><br><br>
+
+<img src="images/notifykde.gif" width="300" height="110"><br><br>
+<i>notifier.window.style=kde</i><br><br>
+
+<img src="images/notifyyellow.gif" width="300" height="110"><br><br>
+<i>notifier.window.style=yellow</i><br><br>
+
+<img src="images/notifymetal.gif" width="300" height="110"><br><br>
+<i>notifier.window.style=metal</i><br><br>
+
+<img src="images/notifywhite.gif" width="300" height="110"><br><br>
+<i>notifier.window.style=white</i><br><br>
+
+<img src="images/notifyxbox.gif" width="300" height="110"><br><br>
+<i>notifier.window.style=xbox</i>
+</p>
+
+<p align="left">
+3) The '<b>notifier.window.sound</b>' property allows for customizing the warning signal of the window.
+There are three variations of the sound effects:<br><br>
+
+A) "beep" - Emits an audio beep (thru the built-in PC speaker - sound card not required)<br>
+B) "sound" - Plays a simple notification WAV file (it's more pleasurable, but sound card required)<br>
+C) Full path of your audio file (sound card required). Example:
+
+<br><br><font face="Monospaced,Courier">
+notifier.window.sound=/docs/effects/notifier.au
+</font><br><br>
+
+Supported sound file properties:<br><br>
+
+A) Audio file formats: AIFF, AU and WAV<br>
+B) Music file formats: MIDI Type 0, MIDI Type 1, and Rich Music Format (RMF)<br>
+C) Sound formats: 8- and 16-bit audio data, in mono and stereo, with sample rates from 8 kHz to 48 kHz<br>
+D) Linear, a-law, and mu-law encoded data in any of the supported audio file formats<br><br>
+
+If your sound file is in a different format (e.g. MP3) or a different frequency it must be converted.
+Note: don't include backslash characters in the file path.
+
+</p>
+
+<p align="left">
+4) The '<b>notifier.local.users</b>' property allows for filtering out users.
+You can specify your local account name (~short user name) in this property.
+It's useful when you use a multiuser environment. 
+</p>
+
+<p align="left">
+5) When you enable GCALDaemon's LDAP service, the notifier replaces the known e-mail addresses
+to full names, by your Gmail Address Book.
+</p>
+
+<p align="center">
+<a href="usage4.html"><img src="images/notifierldap.gif" width="454" height="241" border="0"></a>
+</p>
+
+<p align="justify">
+6) Optionally start the 'service-install.bat' to install GCALDaemon as Windows service
+(on <b>UNIX-compatible</b> systems put GCALDaemon into 'init', 'launchd' or 'rc' script).
+Before uninstall GCALDaemon, you must stop and uninstall this service
+(with 'service-stop.bat' and 'service-uninstall.bat').
+Please note, this is the last step in the setup/configuration process,
+do not install the service while GCALDaemon is not running properly.
+On <b>Vista</b>, it's not enough to be in the Administrators group,
+you need to either be actually logged on as the Administrator.
+
+<br><br><font face="Courier,Monospaced,Teletype" color="gray">
+A) In START menu click on the 'Command Prompt'<br>
+B) Right click on it and select 'Properties'<br>
+C) In 'Shortcut' tab, click on 'Advanced...'<br>
+D) Tick the 'Run as Administrator'<br>
+E) Run 'Command Prompt' and in click 'Continue' in 'User Account Control' box<br>
+F) Now you are in administrator mode<br>
+G) Type 'cd <i>[gcaldaemon installation directory]</i>\bin'<br>
+H) Execute 'service-install.bat'<br>
+I) Execute 'service-start.bat'
+</font>
+</p>
+
+<p align="center">
+<img src="images/screenshot2.gif" width="600" height="418">
+</p>
+
+<center>
+  <form action="http://sourceforge.net/search/" method="get" class="projectsearch" target="sf">
+    <input type="hidden" name="type_of_search" value="forums"/>
+    <input type="hidden" name="group_id" value="184382"/>
+    <input type="text" value="" size="23" maxlength="60" id="projectsearchbox" name="words"/>
+    <input type="submit" value="Forum Search"/>
+  </form>
+</center>
+
+                      </font>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr height="25">
+       <td>
+
+          <table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+              <td width="150">
+              </td>
+              <td bgcolor="black" align="right">
+                <a href="license.html" class="menu" title="Apache License">
+                  APACHE LICENSE VERSION 2.0
+                </a>
+                <img src="images/empty.gif" width="5" height="25" align="absmiddle">
+              </td>
+            </tr>
+          </table>
+
+       </td>
+      </tr>
+
+    </table>
+  </body>
+</html>

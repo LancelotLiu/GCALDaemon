@@ -1,0 +1,595 @@
+<html>
+  <head>
+   <title>GCALDaemon - System Integration Guide</title>
+   <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+   <meta name="keywords"           content="google calendar,ical,icalendar,calendar,sync,synchronize,two-way,bidirectional">
+   <link rel="alternate"     href="http://sourceforge.net/export/rss2_projnews.php?group_id=184382" type="application/rss+xml" title="GCALDaemon News"/>
+   <link rel="stylesheet"    href="stylesheet.css" type="text/css"/>
+   <link rel="icon"          href="favicon.ico"    type="image/x-icon"/>
+   <link rel="shortcut icon" href="favicon.ico"    type="image/x-icon"/>
+  </head>
+  <body topmargin="0" marginwidth="0" marginheight="0" leftmargin="0" bgcolor="#0C3400" link="#000000" vlink="#000000" background="images/raster.gif">
+    <table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0">
+
+      <tr bgcolor="black" height="40">
+        <td background="images/greenline.gif">
+          <table width="99%" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+              <td width="180">
+                <a href="http://gcaldaemon.sourceforge.net"><img src="images/logo.gif" width="180" height="40" alt="GCALDaemon Project Home" border="0"></a>
+              </td>
+              <td width="100%" align="right" valign="top">
+                <font class="bar">
+                  <a href="http://gcaldaemon.sourceforge.net" class="menu" title="Project Home of Google Calendar Synchronizer Daemon">
+                  home
+                  </a>
+                  |
+                  <a href="http://sourceforge.net/forum/?group_id=184382" class="menu" title="Forums to discuss your technical problems">
+                  forums
+                  </a>
+                  |
+                  <a href="http://sourceforge.net/sendmessage.php?touser=1664061" class="menu" title="Contact Us">
+                  contact
+                  </a>
+                  |
+                  <a href="http://sourceforge.net/export/rss2_projnews.php?group_id=184382" class="menu" title="Project News">
+                  rss
+                  </a>
+                  |
+                  <a href="http://sourceforge.net/project/stats/?group_id=184382&ugn=gcaldaemon" class="menu" title="Statistics">
+                  stats
+                  </a>
+                  |
+                  <a href="http://sourceforge.net/donate/index.php?group_id=184382" class="menu" title="Donations to GCALDaemon support the continues development of the project">
+                  donate
+                  </a>
+                </font>
+              </td>
+            </tr>
+          </table>
+       </td>
+      </tr>
+
+      <tr height="25">
+       <td>
+
+          <table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+              <td width="150">
+              </td>
+              <td bgcolor="black">
+                <font class="title">
+                  <b><img src="images/empty.gif" width="1" height="25" align="absmiddle">
+
+::For Developers
+
+                  </b>
+                </font>
+              </td>
+            </tr>
+          </table>
+
+       </td>
+      </tr>
+
+      <tr height="100%">
+        <td>
+
+          <table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+              <td width="150">
+
+               <table width="150" height="100%" cellspacing="0" cellpadding="0" border="0">
+                 <tr bgcolor="black">
+                   <td width="100%" align="right" bgcolor="black"><img src="images/empty.gif" width="1" height="25"><table width="125" cellspacing="0" cellpadding="0" border="0">
+
+<tr bgcolor="#009000">
+  <td valign="bottom" background="images/line.gif"><img src="images/tab.gif" width="5" height="25" align="absmiddle">
+    <a href="index.html" class="nav" title="Google Calendar Synchronizer Project Home">
+      Home
+    </a>
+  </td>
+</tr>
+
+<tr bgcolor="#009000">
+  <td valign="bottom" background="images/line.gif"><img src="images/tab.gif" width="5" height="25" align="absmiddle">
+    <a href="features.html" class="nav" title="Learn about the key features included in GCALDaemon">
+      Features
+    </a>
+  </td>
+</tr>
+
+<tr bgcolor="#009000">
+  <td valign="bottom" background="images/line.gif"><img src="images/tab.gif" width="5" height="25" align="absmiddle">
+    <a href="screenshots.html" class="nav" title="Here are some screenshots of GCALDaemon in action">
+      Screenshots
+    </a>
+  </td>
+</tr>
+
+<tr bgcolor="#009000">
+  <td valign="bottom" background="images/line.gif"><img src="images/tab.gif" width="5" height="25" align="absmiddle">
+    <a href="download.html" class="nav" title="Downloads including source and documentation">
+      Downloads
+    </a>
+  </td>
+</tr>
+
+<tr bgcolor="#009000">
+  <td valign="bottom" background="images/line.gif"><img src="images/tab.gif" width="5" height="25" align="absmiddle">
+    <a href="usage.html" class="nav" title="Instruction manuals and user's guides">
+      User's Guide
+    </a>
+  </td>
+</tr>
+
+<tr bgcolor="white">
+  <td valign="bottom" background="images/line.gif"><img src="images/tab.gif" width="5" height="25" align="absmiddle">
+    <font class="plain">
+      For Developers
+    </font>
+  </td>
+</tr>
+
+<tr bgcolor="#009000">
+  <td valign="bottom" background="images/line.gif"><img src="images/tab.gif" width="5" height="25" align="absmiddle">
+    <a href="license.html" class="nav" title="Apache License V2">
+      License
+    </a>
+  </td>
+</tr>
+
+                     </table><img src="images/empty.gif" width="1" height="25"></td>
+                 </tr>
+                 <tr height="100%"><td valign="bottom" align="center">
+<a href="http://sourceforge.net/donate/index.php?group_id=184382" title="Donations to GCALDaemon support the continues development of the project"><img src="images/support.gif" width="85" height="32" border="0"></a>
+                 </td></tr>
+               </table>
+
+              </td>
+              <td bgcolor="white" valign="top">
+                <table border="0" cellpadding="10" cellspacing="0" width="100%" height="100%">
+                  <tr>
+                    <td valign="top">
+                      <font class="plain">
+
+<font class="header">
+  <img src="images/spot.gif" width="12" height="12" align="absmiddle">&nbsp;&nbsp;<b>GCALDaemon System Integration Guide</b>
+</font>
+
+<ul>
+
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="#simple"    class="link" title="SyncEngine Quick Start">Simplest sample application using GCALDaemon's SyncEngine</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="#libraries" class="link" title="Required JAR files">Required libraries</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="#recompile" class="link" title="Import into Eclipse">Recompile and debug GCALDaemon</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="#logs"      class="link" title="Jakarta Commons Logging">Logging/Tracing</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="#nonical"   class="link" title="PDA sample">Using non-ical-compatible calendars</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="#feed"      class="link" title="Convert RSS/ATOM feeds to iCal">Feed converter</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="#trans"     class="link" title="Translate UI">Translate Config Editor</a><br>
+
+</ul>
+
+<a name="simple"></a>
+<font class="header">
+  <img src="images/spot.gif" width="12" height="12" align="absmiddle">&nbsp;&nbsp;<b>Simplest sample application using SyncEngine</b>
+</font>
+
+<p align="justify">
+The SyncEngine API lets you embed GCALDaemon in your application.
+
+To use the API, you need to first download the latest GCALDaemon ZIP distribution from
+<a href="http://sourceforge.net/project/showfiles.php?group_id=184382" class="menu" target="new">SourceForge.net</a>.
+Once you've installed GCALDaemon, you can develop a calendar synchronizer following the instructions in this documentation.
+This documentation is designed for people familiar with <a href="http://www.javasoft.com" target="new" class="link">Java</a>
+programming and <a href="http://www.eclipse.org" target="new" class="link">Eclipse</a> development platform.
+
+</p>
+<p align="left">
+<font face="Courier,Monospaced,Teletype" color="gray">
+package com.mycompany.samples;<br>
+<br>
+import org.gcaldaemon.api.SyncEngine<br>
+import java.io.File;<br>
+import java.net.URL;<br>
+<br>
+public class SimplestSync {<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public static void main(String[] args) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;try {<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#008800">// This directory is used by the SyncEngine</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#008800">// for temporary file storage</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;File workDir = new File("/foo/sync");<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#008800">// Path to local iCalendar file</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;File localCalendar = new File("/foo/calendar.ics");<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#008800">// Private iCal URL of a Google Calendar</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#008800">// Use the SyncEngine.listCalendars() method to get URLs</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;URL remoteCalendar = new URL(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"https://www.google.com/calendar/.../basic.ics");<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#008800">// Gmail user</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String username = "username@gmail.com";<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#008800">// Gmail password</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String password = "secret123";<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#008800">// Creates a synchronizer engine</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>SyncEngine engine = new SyncEngine(workDir);</b><br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#008800">// Do the synchronization</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<b>engine.synchronize</b>(localCalendar,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;remoteCalendar,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;username,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;password);<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} catch (Exception e) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.printStackTrace();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+}
+</font>
+</p>
+
+<a name="libraries"></a>
+<font class="header">
+  <img src="images/spot.gif" width="12" height="12" align="absmiddle">&nbsp;&nbsp;<b>Required libraries</b>
+</font>
+
+<p align="justify">
+
+Before running the examples in this guide,
+you'll need to make sure that your classpath includes all necessary JAR files.
+Core libraries (required for SyncEngine):
+
+<ul>
+<li>gcal-daemon.jar
+<li>gdata-client.jar
+<li>gdata-calendar.jar
+<li>commons-httpclient.jar
+<li>commons-logging.jar
+<li>commons-codec.jar
+<li>commons-lang.jar
+<li>activation.jar
+<li>logger.jar
+<li>ical4j.jar
+<li>mail.jar
+</ul>
+
+Optional libraries (required for RSS/ATOM converter):
+
+<ul>
+<li>commons-collections.jar
+<li>commons-io.jar
+<li>jdom.jar
+<li>rome.jar
+</ul>
+
+</p>
+
+<a name="recompile"></a>
+<font class="header">
+  <img src="images/spot.gif" width="12" height="12" align="absmiddle">&nbsp;&nbsp;<b>Recompile and debug GCALDaemon</b>
+</font>
+
+<p align="justify">
+
+1) Launch <a href="http://www.eclipse.org" target="new" class="menu">Eclipse</a>,
+then click on the "File/Import..." menu item.
+
+<center><img src="images/import1.gif" width="500" height="377"></center><br>
+
+2) Select "Existing Projects into Workspace" option.
+
+<center><br><img src="images/import2.gif" width="470" height="436"></center><br>
+
+3) In this step of import you should choose the root folder of the project.
+Click on the "Browse" button by the "Select root directory" field.
+
+<center><br><img src="images/import3.gif" width="470" height="436"></center><br>
+
+4) Select the &lt;<i>GCALDaemon install directory</i>&gt;"/GCALDaemon/dev" folder as root.
+
+<center><br><img src="images/import4.gif" width="326" height="322"></center><br>
+
+5) Click on "Finish" button to finish the import procedure.
+
+<center><br><img src="images/import5.gif" width="470" height="409"></center><br>
+
+6) In this step, you simply make sure that the all paths are correct in the project descriptor.
+Select the imported project, right-click it with the mouse, then select "Properties".
+
+<center><br><img src="images/import6.gif" width="500" height="575"></center><br>
+
+7) Select the "Libraries" tab, then you should verify that the libraries are linked
+to the appropriate JAR files in the project descriptor.
+If a path isn't correct, browse to where the JAR is located on your computer
+using the "Edit" button. The "Compiler compliance level" should be "1.4".
+
+<center><br><img src="images/import7.gif" width="500" height="375"></center><br>
+
+8) After the verification, you can launch a debug session for GCALDaemon, directly from the Eclipse.
+Click on the "Debug" icon, then select the GCALDaemon's configuration.
+
+<center><br><img src="images/import8.gif" width="500" height="399"></center>
+
+</p>
+
+<a name="logs"></a>
+<font class="header">
+  <img src="images/spot.gif" width="12" height="12" align="absmiddle">&nbsp;&nbsp;<b>Logging/Tracing</b>
+</font>
+
+<p align="justify">
+GCALDaemon logging and tracing is based on the Logging component of the Jakarta Commons project,
+or the
+<a href="http://commons.apache.org/logging/" class="link" target="new">Jakarta Commons Logging</a>
+(JCL) SPI. The JCL provides a Log interface with thin-wrapper
+implementations for other logging tools, including Log4J, Avalon LogKit, and JDK 1.4.
+
+By using Commons Logging, SyncEngine (JCL) SPI can be
+configured for a variety of different logging behaviours. That means the
+developer will have to make a choice which logging framework to use. To
+specify a specific logger be used, set this system property:<br><br>
+
+org.apache.commons.logging.Log<br><br>
+
+to one of:
+<ul>
+<li>org.apache.commons.logging.impl.SimpleLog
+<li>org.apache.commons.logging.impl.AvalonLogger
+<li>org.apache.commons.logging.impl.Jdk13LumberjackLogger
+<li>org.apache.commons.logging.impl.Jdk14Logger
+<li>org.apache.commons.logging.impl.Log4JLogger
+<li>org.apache.commons.logging.impl.LogKitLogger
+<li>org.apache.commons.logging.impl.NoOpLog
+<li>org.gcaldaemon.logger.DefaultLog
+</ul>
+ 
+By default, the SyncEngine will use the DefaultLog framework. DefaultLog is a
+simple implementation of the Log interface that sends all log messages to
+"System.out". Configuration example:<br><br>
+
+<font face="Courier,Monospaced,Teletype" color="gray">
+System.setProperty("org.apache.commons.logging.Log",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"org.apache.commons.logging.impl.Jdk14Logger");
+</font><br><br>
+
+The minimum requirement to integrate with another logger is to provide
+an implementation of the <i>org.apache.commons.logging.Log</i> interface.
+To use the Commons Logging from your Java class, include the following import statements:<br><br>
+
+<font face="Courier,Monospaced,Teletype" color="gray">
+import org.apache.commons.logging.Log;<br>
+import org.apache.commons.logging.LogFactory;
+</font><br><br>
+
+Then you can declare and initialize a logger as follows:<br><br>
+
+<font face="Courier,Monospaced,Teletype" color="gray">
+public class MyClass {<br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;private Log log = LogFactory.getLog(MyClass.class);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+}
+</font>
+
+</p>
+
+<a name="nonical"></a>
+<font class="header">
+  <img src="images/spot.gif" width="12" height="12" align="absmiddle">&nbsp;&nbsp;<b>Using non-ical-compatible calendars</b>
+</font>
+
+<p align="justify">
+To synchronize a non-ical-compatible calendar to Google Calendar, you have to convert it to iCalendar.
+The conversion is easy if you use "ical4j" API.
+The algorithm of the basic event converter can be expressed in the following pseudocode
+(PDAConnection and PDAEvent are non-existing objects):
+</p>
+
+<p align="left">
+<font face="Courier,Monospaced,Teletype" color="gray">
+package com.mycompany.samples;<br>
+<br>
+import org.gcaldaemon.api.SyncEngine<br>
+import java.io.*;<br>
+import java.net.*;<br>
+import java.util.*;<br>
+import net.fortuna.ical4j.data.*;<br>
+import net.fortuna.ical4j.model.*;<br>
+import net.fortuna.ical4j.model.component.*;<br>
+import net.fortuna.ical4j.model.property.*;<br>
+<br>
+public class PDASynchronizer {<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;public static void main(String[] args) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;try {<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#008800">// Engine's working directory</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;File workDir = new File("/foo/sync");<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#008800">// Private iCal URL of a Google Calendar</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;URL remoteCalendar = new URL(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"https://www.google.com/calendar/.../basic.ics");<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#008800">// Gmail user</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String username = "username@gmail.com";<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#008800">// Gmail password</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String password = "secret123";<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#008800">// Create a synchronizer engine</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;SyncEngine engine = new SyncEngine(workDir);<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#008800">// Connect to PDA</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PDAConnection pda = PDAConnection.connect("COM3");<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#008800">// Download and convert PDA's events</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;byte[] oldLocalCalendar = <font color="red"><b>loadFromPDA</b></font>(pda);<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#008800">// Synchronization</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;byte[] newLocalCalendar = engine.synchronize(oldLocalCalendar,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;remoteCalendar,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;username,<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;password);<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#008800">// Pushback events into the PDA</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="red"><b>saveToPDA</b></font>(pda, newLocalCalendar);<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;} catch (Exception e) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;e.printStackTrace();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;private static byte[] <font color="red"><b>loadFromPDA</b></font>(PDAConnection pda) throws Exception {<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#008800">// Download all events from PDA</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PDAEvent[] pdaEvents = pda.getAllEvents();<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#008800">// Create a new, empty iCalendar object</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calendar iCalendar = new Calendar();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PropertyList props = iCalendar.getProperties();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;props.add(Version.VERSION_2_0);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;props.add(CalScale.GREGORIAN);<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#008800">// Convert PDAEvents to iCalendar events</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (int index = 0; index < pdaEvents.length; index++) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PDAEvent pdaEvent = pdaEvents[index];<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#008800">// Convert properties</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DateTime startTime = pdaEvent.getStartTime();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DateTime endTime = pdaEvent.getEndTime();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;String summary = pdaEvent.getSummary();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#008800">// Add converted event to iCalendar</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VEvent icalEvent = new VEvent(startTime, endTime, summary);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;iCalendar.getComponents().add(icalEvent);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#008800">// Convert iCalendar to byte array</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ByteArrayOutputStream buffer = new ByteArrayOutputStream();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CalendarOutputter outputter = new CalendarOutputter();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;outputter.output(iCalendar, buffer);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return buffer.toByteArray();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;private static final void <font color="red"><b>saveToPDA</b></font>(PDAConnection pda, byte[] icalBytes)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;throws Exception {<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#008800">// Parse bytes to iCalendar</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;CalendarBuilder builder = new CalendarBuilder();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Calendar iCalendar = builder.build(new ByteArrayInputStream(icalBytes));<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#008800">// Remove all events from PDA</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pda.removeAllEvents();<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#008800">// Convert iCalendar events to PDAEvents</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;ComponentList eventList = iCalendar.getComponents(Component.VEVENT);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;for (int index = 0; index < eventList.size(); index++) {<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;VEvent icalEvent = (VEvent) eventList.get(index);<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#008800">// Convert properties</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;PDAEvent pdaEvent = new PDAEvent();<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pdaEvent.setStartDate(icalEvent.getStartDate());<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pdaEvent.setEndDate(icalEvent.getEndDate());<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pdaEvent.setSummary(icalEvent.getSummary());<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;...<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font color="#008800">// Store the converted event</font><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pda.addEvent(pdaEvent);<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+&nbsp;&nbsp;&nbsp;&nbsp;}<br>
+}
+</font>
+</p>
+
+<a name="feed"></a>
+<font class="header">
+  <img src="images/spot.gif" width="12" height="12" align="absmiddle">&nbsp;&nbsp;<b>Feed converter</b>
+</font>
+
+<p align="left">
+SyncEngine - like GCALDaemon - can convert RSS/ATOM XML files to iCalendar format:
+
+<br><br>
+<font face="Courier,Monospaced,Teletype" color="gray">
+<font color="#008800">// Engine's working directory</font><br>
+File workDir = new File("/foo/sync");<br><br>
+
+<font color="#008800">// Link to RSS feed</font><br>
+URL feedURL = new URL("http://newsrss.bbc.co.uk/rss/"<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;+ "newsonline_uk_edition/sci/tech/rss.xml");<br><br>
+
+<font color="#008800">// Create a synchronizer engine</font><br>
+SyncEngine engine = new SyncEngine(workDir);<br><br>
+
+<font color="#008800">// Convert feed to iCalendar</font><br>
+byte[] iCalendar = engine.<b>loadCalendar</b>(feedURL);
+</font>
+
+<br><br>See the JavaDoc for the SyncEngine class for more information.
+</p>
+
+<a name="trans"></a>
+<font class="header">
+  <img src="images/spot.gif" width="12" height="12" align="absmiddle">&nbsp;&nbsp;<b>Localize/translate Config Editor</b>
+</font>
+
+<p align="justify">
+
+All labels and messages displayed by the Config Editor come from property files.
+A separate property file is provided for each supported language.
+These are text files in the "GCALDaemon/lang" directory that you can edit with the Config Editor.<br><br>
+
+1) Launch <a href="usage-b.html" class="menu">Config Editor</a>,
+then click on the "View/Language/Translate" menu item.
+
+<center><br><img src="images/translate1.gif" width="500" height="372"></center><br>
+
+2) Select a non-english language, and translate all messages in the third column.
+
+<center><br><img src="images/translate2.gif" width="500" height="417"></center><br>
+
+3) If you finished the translation, click on "Copy to Clipboard" button,
+then please send the property file to "aberkes<i>_AT_</i>users.sourceforge.net".<br><br>
+
+If you have any questions, feature requests or comments about the SyncEngine API move on to
+<a href="http://sourceforge.net/forum/forum.php?forum_id=643349" class="menu">http://sourceforge.net/forum/forum.php?forum_id=643349</a>
+and share your ideas with us. Thank you!
+
+</p>
+
+                      </font>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr height="25">
+       <td>
+
+          <table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+              <td width="150">
+              </td>
+              <td bgcolor="black" align="right">
+                <a href="license.html" class="menu" title="Apache License">
+                  APACHE LICENSE VERSION 2.0
+                </a>
+                <img src="images/empty.gif" width="5" height="25" align="absmiddle">
+              </td>
+            </tr>
+          </table>
+
+       </td>
+      </tr>
+
+    </table>
+  </body>
+</html>

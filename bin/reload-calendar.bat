@@ -1,0 +1,1 @@
+start c:\Progra~1\Rainlendar2\Rainlendar2.exe -e=Rainlendar_Refresh()

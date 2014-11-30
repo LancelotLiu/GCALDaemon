@@ -1,0 +1,564 @@
+<html>
+  <head>
+   <title>GCALDaemon - Sync Google Calendar with Sunbird</title>
+   <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+   <meta name="keywords"           content="google calendar,ical,icalendar,calendar,sync,synchronize,two-way,bidirectional">
+   <link rel="alternate"     href="http://sourceforge.net/export/rss2_projnews.php?group_id=184382" type="application/rss+xml" title="GCALDaemon News"/>
+   <link rel="stylesheet"    href="stylesheet.css" type="text/css"/>
+   <link rel="icon"          href="favicon.ico"    type="image/x-icon"/>
+   <link rel="shortcut icon" href="favicon.ico"    type="image/x-icon"/>
+  </head>
+  <body topmargin="0" marginwidth="0" marginheight="0" leftmargin="0" bgcolor="#0C3400" link="#000000" vlink="#000000" background="images/raster.gif">
+    <table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0">
+
+      <tr bgcolor="black" height="40">
+        <td background="images/greenline.gif">
+          <table width="99%" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+              <td width="180">
+                <a href="http://gcaldaemon.sourceforge.net"><img src="images/logo.gif" width="180" height="40" alt="GCALDaemon Project Home" border="0"></a>
+              </td>
+              <td width="100%" align="right" valign="top">
+                <font class="bar">
+                  <a href="http://gcaldaemon.sourceforge.net" class="menu" title="Project Home of Google Calendar Synchronizer Daemon">
+                  home
+                  </a>
+                  |
+                  <a href="http://sourceforge.net/forum/?group_id=184382" class="menu" title="Forums to discuss your technical problems">
+                  forums
+                  </a>
+                  |
+                  <a href="http://sourceforge.net/sendmessage.php?touser=1664061" class="menu" title="Contact Us">
+                  contact
+                  </a>
+                  |
+                  <a href="http://sourceforge.net/export/rss2_projnews.php?group_id=184382" class="menu" title="Project News">
+                  rss
+                  </a>
+                  |
+                  <a href="http://sourceforge.net/project/stats/?group_id=184382&ugn=gcaldaemon" class="menu" title="Statistics">
+                  stats
+                  </a>
+                  |
+                  <a href="http://sourceforge.net/donate/index.php?group_id=184382" class="menu" title="Donations to GCALDaemon support the continues development of the project">
+                  donate
+                  </a>
+                </font>
+              </td>
+            </tr>
+          </table>
+       </td>
+      </tr>
+
+      <tr height="25">
+       <td>
+
+          <table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+              <td width="150">
+              </td>
+              <td bgcolor="black">
+                <font class="title">
+                  <b><img src="images/empty.gif" width="1" height="25" align="absmiddle">
+
+::Usage
+
+                  </b>
+                </font>
+              </td>
+            </tr>
+          </table>
+
+       </td>
+      </tr>
+
+      <tr height="100%">
+        <td>
+
+          <table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+              <td width="150">
+
+               <table width="150" height="100%" cellspacing="0" cellpadding="0" border="0">
+                 <tr bgcolor="black">
+                   <td width="100%" align="right" bgcolor="black"><img src="images/empty.gif" width="1" height="25"><table width="125" cellspacing="0" cellpadding="0" border="0">
+
+<tr bgcolor="#009000">
+  <td valign="bottom" background="images/line.gif"><img src="images/tab.gif" width="5" height="25" align="absmiddle">
+    <a href="index.html" class="nav" title="Project Home of Google Calendar Synchronizer Daemon">
+      Home
+    </a>
+  </td>
+</tr>
+
+<tr bgcolor="#009000">
+  <td valign="bottom" background="images/line.gif"><img src="images/tab.gif" width="5" height="25" align="absmiddle">
+    <a href="features.html" class="nav" title="Learn about the key features included in GCALDaemon">
+      Features
+    </a>
+  </td>
+</tr>
+
+<tr bgcolor="#009000">
+  <td valign="bottom" background="images/line.gif"><img src="images/tab.gif" width="5" height="25" align="absmiddle">
+    <a href="screenshots.html" class="nav" title="Here are some screenshots of GCALDaemon in action">
+      Screenshots
+    </a>
+  </td>
+</tr>
+
+<tr bgcolor="#009000">
+  <td valign="bottom" background="images/line.gif"><img src="images/tab.gif" width="5" height="25" align="absmiddle">
+    <a href="download.html" class="nav" title="Downloads including source and documentation">
+      Downloads
+    </a>
+  </td>
+</tr>
+
+<tr bgcolor="white">
+  <td valign="bottom" background="images/line.gif"><img src="images/tab.gif" width="5" height="25" align="absmiddle">
+    <font class="plain">
+      User's Guide
+    </font>
+  </td>
+</tr>
+
+<tr bgcolor="#009000">
+  <td valign="bottom" background="images/line.gif"><img src="images/tab.gif" width="5" height="25" align="absmiddle">
+    <a href="integration.html" class="nav" title="Developer's Guide">
+      For Developers
+    </a>
+  </td>
+</tr>
+
+<tr bgcolor="#009000">
+  <td valign="bottom" background="images/line.gif"><img src="images/tab.gif" width="5" height="25" align="absmiddle">
+    <a href="license.html" class="nav" title="Apache License V2">
+      License
+    </a>
+  </td>
+</tr>
+
+                     </table><img src="images/empty.gif" width="1" height="25"></td>
+                 </tr>
+                 <tr height="100%"><td valign="bottom" align="center">
+<a href="http://sourceforge.net/donate/index.php?group_id=184382" title="Donations to GCALDaemon support the continues development of the project"><img src="images/support.gif" width="85" height="32" border="0"></a>
+                 </td></tr>
+               </table>
+  
+              </td>
+              <td bgcolor="white" valign="top">
+                <table border="0" cellpadding="10" cellspacing="0" width="100%" height="100%">
+                  <tr>
+                    <td valign="top">
+                      <font class="plain">
+
+<font class="header">
+  <img src="images/spot.gif" width="12" height="12" align="absmiddle">&nbsp;&nbsp;<b>Configuration Editor</b>
+</font>
+
+<p align="justify">
+The Configuration Editor provides a simple graphical user interface
+with tabbed dialogs to helps you to manage GCALDaemon's configuration file.
+It simplyfies editing this file (gcal-daemon.cfg) significantly.
+By using a tool you also avoid typing errors and it is very easy
+for example to encode a password or switch a service on or off.
+</p>
+
+<a name="top"></a>
+<font class="header">
+  <img src="images/spot.gif" width="12" height="12" align="absmiddle">&nbsp;&nbsp;<b>Sync Google Calendar and Sunbird/Lightning</b>
+</font>
+
+<ul>
+
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="#online"  class="link" title="Fast permanent synchronization">Desktop PC configuration - Permanent Internet connection (always online)</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="#offline" class="link" title="Offline synchronization">Notebook configuration - Dial-up Internet connection (offline-enabled mode)</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="#compat"  class="link" title="Compatibility notes">Compatibility notes</a>
+
+</ul>
+
+<a name="online"></a>
+<font class="header">
+  <img src="images/spot.gif" width="12" height="12" align="absmiddle">&nbsp;&nbsp;<b>Permanent Internet connection</b>
+</font>
+
+<p align="left">
+1) <a href="usage10.html" class="nav">Install GCALDaemon (Java 1.5 required).</a><br><br>
+
+2) Start Config Editor ('config-editor.bat' or 'config-editor.sh').
+Select the second tab ('HTTP Synchronizer'), then click on the 'Google Account' button.
+</p>
+
+<p align="center">
+<img src="images/editor1.gif" width="500" height="332">
+</p>
+
+<p align="left">
+3) If required, you can register a new Google Account:
+Click on 'New Account', type in your Gmail address and
+password (twice), then click on 'Verify' button.
+</p>
+
+<p align="center"> 
+<img src="images/editor2.gif" width="501" height="362">
+</p>
+
+<p align="left">
+4) After the verification, click on the 'OK' button.
+</p>
+
+<p align="center">
+<img src="images/editor3.gif" width="376" height="122">
+</p>
+
+<p align="left">
+5) Select your Gmail address from the 'Google Account' combo.
+Then Config Editor downloads this account's iCalendar addresses.
+</p>
+
+<p align="center">
+<img src="images/editor4.gif" width="500" height="366">
+</p>
+
+<p align="left">
+6) Select the appropriate iCalendar address (URL),
+then click on the 'Copy to Clipboard' button.
+</p>
+
+<p align="center">
+<img src="images/editor5.gif" width="500" height="332">
+</p>
+
+7) Launch Sunbird. Click the 'New Calendar...' menu on the Calendars page.
+</p>
+
+<p align="center">
+<img src="images/url2.gif" width="600" height="413">
+</p>
+
+<p align="left">
+8) Select 'On the Network' option on 'Create New Calendar' dialog.
+</p>
+
+<p align="center">
+<img src="images/url3.gif" width="447" height="362">
+</p>
+
+<p align="left">
+9) Select 'iCalendar' format, and paste [CTRL+V]
+the copied iCal URL for your calendar's Private Address into 'Location' field.
+</p>
+
+<p align="center">
+<img src="images/url4.gif" width="447" height="362">
+</p>
+
+<p align="left">
+10) Input the new calendar's name (e.g. 'Google Calendar'). Click 'Next' then 'Finish'.
+</p>
+
+<p align="center">
+<img src="images/url5.gif" width="447" height="362">
+</p>
+
+<p align="justify">
+11) Input the username and password for your Google Calendar when prompted.
+Optionally check the 'Use Password Manager to remember this password' box.
+Items added (or modified/deleted) to your Sunbird calendar
+will now automatically appear in your Google Calendar.
+</p>
+
+<p align="center">
+<img src="images/url6.gif" width="444" height="217">
+</p>
+
+<a name="offline"></a>
+<font class="header">
+  <img src="images/spot.gif" width="12" height="12" align="absmiddle">&nbsp;&nbsp;<b>Dial-up Internet connection</b>
+</font>
+
+<p align="justify">
+
+1) <a href="usage10.html" class="nav">Install GCALDaemon (Java 1.5 required).</a><br><br>
+
+2) Start Config Editor ('config-editor.bat' or 'config-editor.sh').
+Select the second tab and disable the HTTP-based synchronizer.
+Select the third tab and enable the file-based synchronizer.
+Enable the 'dial-up connection' mode (second checkbox on this page),
+then click on the 'Google Accounts' button.
+</p>
+
+<p align="center">
+<img src="images/editor6.gif" width="500" height="359">
+</p>
+
+<p align="left">
+3)  If required, you can register a new Google Account:
+Click on 'New Account', type in your Gmail address and
+password (twice), then click on 'Verify' button.
+</p>
+
+<p align="center">
+<img src="images/editor2.gif" width="501" height="362">
+</p>
+
+<p align="left">
+4) After the verification, click on the 'OK' button.
+</p>
+
+<p align="center">
+<img src="images/editor3.gif" width="376" height="122">
+</p>
+
+<p align="left">
+5) Click on the 'New' button.
+</p>
+
+<p align="center">
+<img src="images/editor7.gif" width="500" height="359">
+</p>
+
+<p align="left">
+6) Select/browse the appropriate Google Calendar and iCalendar file.
+Click on 'Copy to Clipboard' then click 'OK'.
+<b>Save</b> the changes (File/Save).
+</p>
+
+<p align="center">
+<img src="images/editor8.gif" width="500" height="227">
+</p>
+
+<p align="left">
+7) Launch Sunbird. Click the 'New Calendar...' menu on the Calendars page.
+</p>
+
+<p align="center">
+<img src="images/url2.gif" width="600" height="413">
+</p>
+
+<p align="left">
+8) Select 'On the Network' option on 'Create New Calendar' dialog.
+</p>
+
+<p align="center">
+<img src="images/url3.gif" width="447" height="362">
+</p>
+
+<p align="left">
+9) Select 'iCalendar' format, and paste [CTRL+V]
+the copied iCal file URL for your calendar's Private Address into 'Location' field.
+</p>
+
+<p align="center">
+<img src="images/file.gif" width="447" height="362">
+</p>
+
+<p align="left">
+10) Input the new calendar's name (e.g. 'Google Calendar'). Click 'Next' then 'Finish'.
+</p>
+
+<p align="center">
+<img src="images/url5.gif" width="447" height="362">
+</p>
+
+<p align="left">
+11) Items added (or modified/deleted) to your Sunbird calendar will now automatically appear in your Google Calendar.
+GCALDaemon compares your Google Calendar (if available) and local iCalendar file every 10 minutes,
+and does all modifications together. If it is unable to do so because the network is unavailable,
+it tries again when it detects network presence.
+</p>
+
+<a name="compat"></a>
+<font class="header">
+  <img src="images/spot.gif" width="12" height="12" align="absmiddle">&nbsp;&nbsp;<b>Compatibility notes</b>
+</font>
+
+<p align="justify">
+1) Default synchronization:
+Sunbird/Lightning alarm property synchronized unidirectionally (move property from Sunbird to Google).
+Google Calendar supports discrete alarm values only (5-10-15-20-25-30-45 mins, 1-2-3 hours,
+1-2 days, or one week). GCALDaemon converts different values into such an values
+(e.g. 17 min to 15 min, 6 day to one week, etc).
+Category, priority and URL properties are unsupported by the Google Calendar API.
+</p>
+
+<table border="1" width="90%" align="center" cellspacing="0">
+  <tr bgcolor="#EEEEEE">
+    <th align=left><font size="2" face="Arial,Helvetica">iCalendar event property</font></th>
+    <th align=left><font size="2" face="Arial,Helvetica">Google Calendar event property</font></th>
+    <th align=left><font size="2" face="Arial,Helvetica">Synchronization</font></th>
+  </tr>
+  <tr>  
+    <td><font size="2" face="Arial,Helvetica">summary</font></td>
+    <td><font size="2" face="Arial,Helvetica">title</font></td>
+    <td><font size="2" face="Arial,Helvetica">bidirectionally</font></td>
+  </tr>
+  <tr>  
+    <td><font size="2" face="Arial,Helvetica">location</font></td>
+    <td><font size="2" face="Arial,Helvetica">where</font></td>
+    <td><font size="2" face="Arial,Helvetica">bidirectionally</font></td>
+  </tr>
+  <tr>  
+    <td><font size="2" face="Arial,Helvetica">description</font></td>
+    <td><font size="2" face="Arial,Helvetica">content</font></td>
+    <td><font size="2" face="Arial,Helvetica">bidirectionally</font></td>
+  </tr>
+  <tr>  
+    <td><font size="2" face="Arial,Helvetica">created date</font></td>
+    <td><font size="2" face="Arial,Helvetica">published date</font></td>
+    <td><font size="2" face="Arial,Helvetica">bidirectionally</font></td>
+  </tr>
+  <tr>  
+    <td><font size="2" face="Arial,Helvetica">start date</font></td>
+    <td><font size="2" face="Arial,Helvetica">start date</font></td>
+    <td><font size="2" face="Arial,Helvetica">bidirectionally</font></td>
+  </tr>
+  <tr>  
+    <td><font size="2" face="Arial,Helvetica">end date</font></td>
+    <td><font size="2" face="Arial,Helvetica">end date</font></td>
+    <td><font size="2" face="Arial,Helvetica">bidirectionally</font></td>
+  </tr>
+  <tr>  
+    <td><font size="2" face="Arial,Helvetica">all day event (true / false)</font></td>
+    <td><font size="2" face="Arial,Helvetica">all day event (true / false)</font></td>
+    <td><font size="2" face="Arial,Helvetica">bidirectionally</font></td>
+  </tr>
+  <tr>  
+    <td><font size="2" face="Arial,Helvetica">status (tentative / confirmed / canceled)</font></td>
+    <td><font size="2" face="Arial,Helvetica">status (tentative / confirmed / canceled)</font></td>
+    <td><font size="2" face="Arial,Helvetica">bidirectionally</font></td>
+  </tr>
+  <tr>  
+    <td><font size="2" face="Arial,Helvetica">classification (public / private)</font></td>
+    <td><font size="2" face="Arial,Helvetica">visibility (public / private)</font></td>
+    <td><font size="2" face="Arial,Helvetica">bidirectionally</font></td>
+  </tr>
+  <tr>  
+    <td><font size="2" face="Arial,Helvetica">transparency (transparent / opaque)</font></td>
+    <td><font size="2" face="Arial,Helvetica">transparency (transparent / opaque)</font></td>
+    <td><font size="2" face="Arial,Helvetica">bidirectionally</font></td>
+  </tr>
+  <tr>  
+    <td><font size="2" face="Arial,Helvetica">attendees</font></td>
+    <td><font size="2" face="Arial,Helvetica">participants</font></td>
+    <td><font size="2" face="Arial,Helvetica">bidirectionally</font></td>
+  </tr>
+  <tr>  
+    <td><font size="2" face="Arial,Helvetica">recurrence rule (including exceptions)</font></td>
+    <td><font size="2" face="Arial,Helvetica">recurrence rule (including exceptions)</font></td>
+    <td><font size="2" face="Arial,Helvetica">bidirectionally</font></td>
+  </tr>
+  <tr>  
+    <td><font size="2" face="Arial,Helvetica">recurrence-id</font></td>
+    <td><font size="2" face="Arial,Helvetica">original event</font></td>
+    <td><font size="2" face="Arial,Helvetica">bidirectionally</font></td>
+  </tr>
+  <tr>  
+    <td><font size="2" face="Arial,Helvetica"><i>alarm</i></font></td>
+    <td><font size="2" face="Arial,Helvetica"><i>reminder</i></font></td>
+    <td><font size="2" face="Arial,Helvetica"><i>one-way only (Sunbird to Google)</i></font></td>
+  </tr>
+</table>
+
+<p align="center">
+<img src="images/event1.gif" width="365" height="319">
+</p>
+
+<p align="justify">
+2) Extended synchronization:
+GCALDaemon is able to synchronize on these four iCalendar property in 'extended mode':
+alarm (two-way), category, priority and URL.
+This is useful if you'd like to sync Google Calendar with your PDA (file-based sync and dial-up mode).
+To enable this feature set the 'extended.sync.enabled' property to 'true'.
+Note: Needless use of the extended mode (especially with large calendars) can reduce the performance.
+</p>
+
+<table border="1" width="90%" align="center" cellspacing="0">
+  <tr bgcolor="#EEEEEE">
+    <th align=left><font size="2" face="Arial,Helvetica">iCalendar event property</font></th>
+    <th align=left><font size="2" face="Arial,Helvetica">Google Calendar event property</font></th>
+    <th align=left><font size="2" face="Arial,Helvetica">Synchronization</font></th>
+  </tr>
+  <tr>  
+    <td><font size="2" face="Arial,Helvetica">alarm</font></td>
+    <td><font size="2" face="Arial,Helvetica">reminder</font></td>
+    <td><font size="2" face="Arial,Helvetica">bidirectionally</font></td>
+  </tr>
+  <tr>  
+    <td><font size="2" face="Arial,Helvetica">category (Business, Birthday, etc)</font></td>
+    <td><font size="2" face="Arial,Helvetica"><i>hidden</i></font></td>
+    <td><font size="2" face="Arial,Helvetica">bidirectionally</font></td>
+  </tr>
+  <tr>  
+    <td><font size="2" face="Arial,Helvetica">priority (low, medium, high)</font></td>
+    <td><font size="2" face="Arial,Helvetica"><i>hidden</i></font></td>
+    <td><font size="2" face="Arial,Helvetica">bidirectionally</font></td>
+  </tr>
+  <tr>  
+    <td><font size="2" face="Arial,Helvetica">URL</font></td>
+    <td><font size="2" face="Arial,Helvetica"><i>hidden</i></font></td>
+    <td><font size="2" face="Arial,Helvetica">bidirectionally</font></td>
+  </tr>
+</table>
+
+<p align="center">
+<img src="images/editor10.gif" width="500" height="340">
+<br><br>
+<img src="images/event1b.gif" width="365" height="319">
+</p>
+
+<p align="justify">
+3) Google Calendar - unlike Sunbird/Lightning - does not support To Do (Task) items.
+Therefore GCALDaemon stores To Do items in a local file storage.
+This storage is the 'GCALDaemon/work' folder.
+Before uninstall an older GCALDaemon version you should archive this directory.
+If the new GCALDaemon installation finishes you can restore
+the previous 'work' folder, including the old To Do items.
+</p>
+
+<p align="center">
+<img src="images/todo.gif" width="500" height="343">
+</p>
+
+<center>
+  <form action="http://sourceforge.net/search/" method="get" class="projectsearch" target="sf">
+    <input type="hidden" name="type_of_search" value="forums"/>
+    <input type="hidden" name="group_id" value="184382"/>
+    <input type="text" value="" size="23" maxlength="60" id="projectsearchbox" name="words"/>
+    <input type="submit" value="Forum Search"/>
+  </form>
+</center>
+
+                      </font>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr height="25">
+       <td>
+
+          <table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+              <td width="150">
+              </td>
+              <td bgcolor="black" align="right">
+                <a href="license.html" class="menu" title="Apache License">
+                  APACHE LICENSE VERSION 2.0
+                </a>
+                <img src="images/empty.gif" width="5" height="25" align="absmiddle">
+              </td>
+            </tr>
+          </table>
+
+       </td>
+      </tr>
+
+    </table>
+  </body>
+</html>

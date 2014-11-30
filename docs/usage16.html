@@ -1,0 +1,698 @@
+<html>
+  <head>
+   <title>GCALDaemon - Sync Google Calendar with Evolution</title>
+   <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+   <meta name="keywords"           content="google calendar,ical,icalendar,calendar,sync,synchronize,two-way,bidirectional">
+   <link rel="alternate"     href="http://sourceforge.net/export/rss2_projnews.php?group_id=184382" type="application/rss+xml" title="GCALDaemon News"/>
+   <link rel="stylesheet"    href="stylesheet.css" type="text/css"/>
+   <link rel="icon"          href="favicon.ico"    type="image/x-icon"/>
+   <link rel="shortcut icon" href="favicon.ico"    type="image/x-icon"/>
+  </head>
+  <body topmargin="0" marginwidth="0" marginheight="0" leftmargin="0" bgcolor="#0C3400" link="#000000" vlink="#000000" background="images/raster.gif">
+    <table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0">
+
+      <tr bgcolor="black" height="40">
+        <td background="images/greenline.gif">
+          <table width="99%" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+              <td width="180">
+                <a href="http://gcaldaemon.sourceforge.net"><img src="images/logo.gif" width="180" height="40" alt="GCALDaemon Project Home" border="0"></a>
+              </td>
+              <td width="100%" align="right" valign="top">
+                <font class="bar">
+                  <a href="http://gcaldaemon.sourceforge.net" class="menu" title="Project Home of Google Calendar Synchronizer Daemon">
+                  home
+                  </a>
+                  |
+                  <a href="http://sourceforge.net/forum/?group_id=184382" class="menu" title="Forums to discuss your technical problems">
+                  forums
+                  </a>
+                  |
+                  <a href="http://sourceforge.net/sendmessage.php?touser=1664061" class="menu" title="Contact Us">
+                  contact
+                  </a>
+                  |
+                  <a href="http://sourceforge.net/export/rss2_projnews.php?group_id=184382" class="menu" title="Project News">
+                  rss
+                  </a>
+                  |
+                  <a href="http://sourceforge.net/project/stats/?group_id=184382&ugn=gcaldaemon" class="menu" title="Statistics">
+                  stats
+                  </a>
+                  |
+                  <a href="http://sourceforge.net/donate/index.php?group_id=184382" class="menu" title="Donations to GCALDaemon support the continues development of the project">
+                  donate
+                  </a>
+                </font>
+              </td>
+            </tr>
+          </table>
+       </td>
+      </tr>
+
+      <tr height="25">
+       <td>
+
+          <table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+              <td width="150">
+              </td>
+              <td bgcolor="black">
+                <font class="title">
+                  <b><img src="images/empty.gif" width="1" height="25" align="absmiddle">
+
+::Usage
+
+                  </b>
+                </font>
+              </td>
+            </tr>
+          </table>
+
+       </td>
+      </tr>
+
+      <tr height="100%">
+        <td>
+
+          <table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+              <td width="150">
+
+               <table width="150" height="100%" cellspacing="0" cellpadding="0" border="0">
+                 <tr bgcolor="black">
+                   <td width="100%" align="right" bgcolor="black"><img src="images/empty.gif" width="1" height="25"><table width="125" cellspacing="0" cellpadding="0" border="0">
+
+<tr bgcolor="#009000">
+  <td valign="bottom" background="images/line.gif"><img src="images/tab.gif" width="5" height="25" align="absmiddle">
+    <a href="index.html" class="nav" title="Project Home of Google Calendar Synchronizer Daemon">
+      Home
+    </a>
+  </td>
+</tr>
+
+<tr bgcolor="#009000">
+  <td valign="bottom" background="images/line.gif"><img src="images/tab.gif" width="5" height="25" align="absmiddle">
+    <a href="features.html" class="nav" title="Learn about the key features included in GCALDaemon">
+      Features
+    </a>
+  </td>
+</tr>
+
+<tr bgcolor="#009000">
+  <td valign="bottom" background="images/line.gif"><img src="images/tab.gif" width="5" height="25" align="absmiddle">
+    <a href="screenshots.html" class="nav" title="Here are some screenshots of GCALDaemon in action">
+      Screenshots
+    </a>
+  </td>
+</tr>
+
+<tr bgcolor="#009000">
+  <td valign="bottom" background="images/line.gif"><img src="images/tab.gif" width="5" height="25" align="absmiddle">
+    <a href="download.html" class="nav" title="Downloads including source and documentation">
+      Downloads
+    </a>
+  </td>
+</tr>
+
+<tr bgcolor="white">
+  <td valign="bottom" background="images/line.gif"><img src="images/tab.gif" width="5" height="25" align="absmiddle">
+    <font class="plain">
+      User's Guide
+    </font>
+  </td>
+</tr>
+
+<tr bgcolor="#009000">
+  <td valign="bottom" background="images/line.gif"><img src="images/tab.gif" width="5" height="25" align="absmiddle">
+    <a href="integration.html" class="nav" title="Developer's Guide">
+      For Developers
+    </a>
+  </td>
+</tr>
+
+<tr bgcolor="#009000">
+  <td valign="bottom" background="images/line.gif"><img src="images/tab.gif" width="5" height="25" align="absmiddle">
+    <a href="license.html" class="nav" title="Apache License V2">
+      License
+    </a>
+  </td>
+</tr>
+
+                     </table><img src="images/empty.gif" width="1" height="25"></td>
+                 </tr>
+                 <tr height="100%"><td valign="bottom" align="center">
+<a href="http://sourceforge.net/donate/index.php?group_id=184382" title="Donations to GCALDaemon support the continues development of the project"><img src="images/support.gif" width="85" height="32" border="0"></a>
+                 </td></tr>
+               </table>
+  
+              </td>
+              <td bgcolor="white" valign="top">
+                <table border="0" cellpadding="10" cellspacing="0" width="100%" height="100%">
+                  <tr>
+                    <td valign="top">
+                      <font class="plain">
+
+<font class="header">
+  <img src="images/spot.gif" width="12" height="12" align="absmiddle">&nbsp;&nbsp;<b>Guides</b>
+</font>
+
+<ul>
+
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage10.html" class="link" title="XP installation guide">Installation on Windows NT/2000/XP</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage17.html" class="link" title="Vista guide">Installation on Windows Vista</a><br>
+
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage11.html" class="link" title="Linux installation guide">Installation on Linux/Unix/AIX</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage12.html" class="link" title="Mac OS X installation guide">Installation on Mac OS X</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage15.html" class="link" title="Servlet installation guide">Deploy on Apache Tomcat</a><br><br>
+
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage.html" class="link" title="Sync Google Calendar with Sunbird">Sync Google Calendar with Sunbird (HTTP-based synchronization)</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage13.html" class="link" title="Sync Google Calendar with iCal">Sync Google Calendar with Apple iCal (file-based synchronization)</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="#top" class="link" title="Sync Google Calendar with Evolution">Sync Google Calendar with Evolution (file-based synchronization)</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage2.html" class="link" title="Sync Google Calendar with Rainlendar">Sync Google Calendar with Rainlendar (file-based synchronization)</a><br><br>
+
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage4.html" class="link" title="Import Gmail contacts via LDAP">Access Gmail contacts from Mozilla Thunderbird (LDAP server)</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage5.html" class="link" title="Import Gmail contacts via LDAP">Access Gmail contacts from Lotus Notes (LDAP server)</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage6.html" class="link" title="Import Gmail contacts via LDAP">Access Gmail contacts from Outlook Express (LDAP server)</a><br><br>
+
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage8.html" class="link" title="Setup Gmail notifier">Setup Gmail notifier</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage9.html" class="link" title="Send text files via Gmail">Sending text and HTML files via Gmail (sendmail)</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage14.html" class="link" title="Execute scripts via email messages">Remote control your computer using Gmail (mailterm)</a><br>
+
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage3.html" class="link" title="Convert RSS/ATOM feed to ICS">Read RSS and ATOM feeds with your calendar application (feed converter)</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage7.html" class="link" title="Accelerating news readers">Caching RSS and ATOM news (feed cache)</a><br>
+
+</ul>
+
+<a name="top"></a>
+<font class="header">
+  <img src="images/spot.gif" width="12" height="12" align="absmiddle">&nbsp;&nbsp;<b>Sync Google Calendar and Evolution</b>
+</font>
+<ul>
+
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="#online"   class="link" title="Fast permanent synchronization">Desktop configuration - Permanent Internet connection (always online)</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="#offline"  class="link" title="Offline synchronization">Notebook configuration - Dial-up Internet connection (offline-enabled mode)</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="#multiple" class="link" title="Multisync configuration">Multiple file listeners</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="#feed"     class="link" title="Converting RSS/ATOM feeds">Using Evolution Calendar as a feed reader</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="#fine"     class="link" title="Fine adjustment">Fine adjustment</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="#compat"   class="link" title="Compatibility notes">Compatibility notes</a>
+
+</ul>
+
+<p align="justify">
+The file-based synchronization mode keeps one or more local calendar file(s) in sync with your Google Calendar and vice versa.
+After installing this program, your Evolution calendar should be able to subscribe and modify a remote Google Calendar.
+</p>
+
+<p align="center">
+<img src="images/arch12.gif" width="600" height="196">
+</p>
+
+<a name="online"></a>
+<font class="header">
+  <img src="images/spot.gif" width="12" height="12" align="absmiddle">&nbsp;&nbsp;<b>Permanent Internet connection</b>
+</font>
+
+<p align="justify">
+
+1) <a href="usage11.html" class="nav">Install GCALDaemon (Java 1.5 required).</a><br><br>
+
+<font face="Courier,Monospaced,Teletype" color="gray">
+mkdir -p /usr/local/sbin<br>
+cd /usr/local/sbin<br>
+unzip /<i>downloads</i>/gcaldaemon-linux-1.x.zip<br>
+chgrp -R <i>usergroup</i> /usr/local/sbin/GCALDaemon<br>
+chmod -R g+w /usr/local/sbin/GCALDaemon<br>
+chmod 755 /usr/local/sbin/GCALDaemon/bin/*.sh<br>
+</font>
+<br>
+
+2) Launch Evolution, and click the 'New Calendar' menu on the Calendars page.
+</p>
+
+<p align="center">
+<img src="images/evolution1.gif" width="600" height="456">
+</p>
+
+<p align="left">
+3) Create a new <b>local calendar</b>, maybe named 'Google Calendar'.
+</p>
+
+<p align="center">
+<img src="images/evolution2.gif" width="430" height="370">
+</p>
+
+<p align="justify">
+4) Quit Evolution, and see which calendar file has been added to
+the '<b>user home/.evolution/calendar/local</b>' folder by the Evolution.
+The calendar file's path would look like the following:
+
+<br><br>/home/yourname/.evolution/calendar/local/7831150487.204.15@PC/calendar.ics
+<br><br>
+
+5) Open the 'gcal-daemon.cfg' configuration file.<br><br>
+
+6) Put the full path to '<b>calendar.ics</b>'
+for the variable '<b>file.ical.path</b>'.<br><br>
+
+<font face="Courier,Monospaced,Teletype" color="gray">
+# Full path of the local iCalendar file<br>
+file.ical.path=/home/<i>user</i>/.evolution/calendar/local/<i>7831150487.204.15@HOST</i>/calendar.ics<br>
+</font>
+<br>
+
+7) Encode your Gmail password with the 'password-encoder.sh'.
+Input your password and press ENTER. Copy the encoded password.
+<br><br>
+
+<font face="Courier,Monospaced,Teletype" color="gray">
+cd /usr/local/sbin/GCALDaemon/bin<br>
+./password-encoder.sh<br>
+</font>
+<br>
+
+8) Put your Gmail address for the variable '<b>file.google.username</b>'.<br><br>
+
+<font face="Courier,Monospaced,Teletype" color="gray">
+# Gmail user (your full email address)<br>
+file.google.username=example@gmail.com<br>
+</font>
+<br>
+
+9) Put your encoded password for the variable '<b>file.google.password</b>'.<br><br>
+
+<font face="Courier,Monospaced,Teletype" color="gray">
+# Gmail password (use password encoder!)<br>
+file.google.password=31260V7mc34jV22c<br>
+</font>
+<br>
+
+10) <a href="https://www.google.com/accounts/" class="link" title="Go to Google Calendar" target="ext">Copy the iCal URL for your calendar's Private Address on the Calendar Settings page.</a>
+</p>
+
+<p align="center">
+<a href="https://www.google.com/accounts/" class="link" title="Go to Google Calendar" target="ext"><img src="images/url1.gif" width="559" height="248" border="0"></a>
+</p>
+
+<p align="left">
+
+11) Put your iCal URL for the variable '<b>file.private.ical.url</b>', without protocol and hostname.<br><br>
+
+<font face="Courier,Monospaced,Teletype" color="gray">
+# URL (without hostname) of the Google Calendar's private ical file<br>
+file.private.ical.url=/calendar/ical/example%40gmail.com/private-495c0f1bfg/basic.ics<br>
+</font>
+<br>
+
+12) Set the '<b>file.enabled</b>' property to 'true'.<br><br>
+
+<font face="Courier,Monospaced,Teletype" color="gray">
+# Enable iCalendar file listener/synchronizer<br>
+file.enabled=true<br>
+</font>
+<br>
+
+13) Start GCALDaemon ('standalone-start.sh' or 'sync-now.sh').<br><br>
+
+<font face="Courier,Monospaced,Teletype" color="gray">
+cd /usr/local/sbin/GCALDaemon/bin<br>
+./standalone-start.sh<br>
+<br>
+INFO | GCALDaemon V1.0 beta 16 starting...<br>
+INFO | Local time zone is Pacific Standard Time.<br>
+INFO | HTTP server disabled.<br>
+INFO | RSS/ATOM feed converter disabled.<br>
+INFO | Start listening file /home/me/.evolution/calendar/*/calendar.ics...<br>
+INFO | File listener started successfully.<br>
+INFO | LDAP server disabled.<br>
+INFO | Gmail notifier disabled.<br>
+INFO | Sendmail service disabled.<br>
+</font>
+<br>
+
+14) Restart Evolution.
+Items added (or modified/deleted) to your Evolution calendar will now automatically appear in your Google Calendar.<br><br>
+
+15) Evolution loads 'calendar.ics' at startup.
+Then it caches this file after it is first compiled and <b>does not poll</b>
+for file changes until you restart the application. As a result, if GCALDaemon make changes
+in 'calendar.ics', you must restart Evolution before those changes take effect.
+To avoid data loss, do not modify your Google Calendar with Evolution and with Web-browser simultaneously.
+</p>
+
+<a name="offline"></a>
+<font class="header">
+  <img src="images/spot.gif" width="12" height="12" align="absmiddle">&nbsp;&nbsp;<b>Dial-up Internet connection</b>
+</font>
+
+<p align="justify">
+The 'file.offline.enabled' option is the only one difference between the
+offline (dial-up) and online (fast) Google Calendar synchronization.
+To enable GCALDaemon's offline synchronization algorithm,
+follow the step-by-step instructions about the
+<a href="#online"   class="link" title="Fast permanent synchronization">Desktop configuration (Permanent Internet connection)</a>,
+then set the '<b>file.offline.enabled</b>' property to 'true'.<br><br>
+
+<font face="Courier,Monospaced,Teletype" color="gray">
+# Turn it on when you use dial-up connection (default is "false")<br>
+file.offline.enabled=true<br>
+</font>
+</p>
+
+<p align="justify">
+Permanently connected (always online) mode:
+GCALDaemon downloads your Google Calendar's iCalendar file every 10 minutes
+(see the 'file.polling.google' property). In the meantime
+GCALDaemon's file scanner listens the changes in the local iCalendar files,
+and updates the remote Google Calendar events almost immediately,
+using small portion of XML messages
+(see the 'file.polling.file' property).
+This mode is much more faster than the offline algorithm,
+but does not support offline working.
+</p>
+
+<p align="center">
+<img src="images/onlinemode.gif" width="536" height="291">
+</p>
+
+<p align="justify">
+Dial-up (offline-enabled) mode:
+GCALDaemon compares your Google Calendar (if available) and local iCalendar file every 10 minutes,
+and does all modifications together.
+If it is unable to do so because the network is unavailable, it tries again when it detects network presence.
+The average network usage of these (online / offline) modes are equal.
+This mode is particularly useful for NoteBook users and for third-party phone/PDA synchronizers.
+</p>
+
+<p align="center">
+<img src="images/offlinemode.gif" width="536" height="263">
+</p>
+
+<p align="justify">
+Sync-on-demand:
+This feature is a variant of the offline/dial-up mode.
+When you launch the 'GCALDaemon/bin/sync-now.sh' script,
+GCALDaemon synchronize your calendar files, then stop.
+You can create a shortcut icon on your desktop for the script,
+or you can invoke it at user login automatically.
+</p>
+
+<p align="center">
+<img src="images/syncnow.gif" width="267" height="206">
+</p>
+
+<a name="multiple"></a>
+<font class="header">
+  <img src="images/spot.gif" width="12" height="12" align="absmiddle">&nbsp;&nbsp;<b>Multiple file listeners and Google Accounts</b>
+</font>
+
+<p align="justify">
+To set up multiple file listeners, you need to configure
+a path-username-password-url set for each of the Google Calendars you want to synchronize (the first listener definition is
+unindexed, the others are indexed from '<b>2</b>'):<br><br>
+
+<font face="Courier,Monospaced,Teletype" color="gray">
+
+# First calendar<br>
+file.ical.path=/home/*/.evolution/calendar/local/*/calendar.ics<br>
+file.google.username=example@gmail.com<br>
+file.google.password=31260V7mc34jV22c<br>
+file.private.ical.url=/calendar/ical/example%40gmail.com/private-495c0f1bfg/basic.ics<br><br>
+
+# Second calendar<br>
+file.ical.path<font color="red">2</font>=/home/*/.evolution/calendar/local/*/calendar.ics<br>
+file.google.username<font color="red">2</font>=account@gmail.com<br>
+file.google.password<font color="red">2</font>=b34jV22c95c0f1<br>
+file.private.ical.url<font color="red">2</font>=/calendar/ical/495c0f1495c0f1/private-0f1b495cfg/basic.ics<br><br>
+
+# Third calendar<br>
+file.ical.path<font color="red">3</font>=/home/*/.evolution/calendar/local/*/calendar.ics<br>
+file.google.username<font color="red">3</font>=gmailuser@gmail.com<br>
+file.google.password<font color="red">3</font>=95c0f1b4jV22c<br>
+file.private.ical.url<font color="red">3</font>=/calendar/ical/otheruser%40gmail.com/private-f1b495c0fg/basic.ics<br>
+
+</font>
+</p>
+
+<a name="feed"></a>
+<font class="header">
+  <img src="images/spot.gif" width="12" height="12" align="absmiddle">&nbsp;&nbsp;<b>Feed converter</b>
+</font>
+
+<p align="justify"> 
+File-based synchronizer can convert RSS/ATOM XML files to iCalendar format,
+therefore you can read news, blogs and tweets with Evolution Calendar.
+This feature makes copying feed entries to Google Calendar a simple copy/paste operation.
+Once the entry copied to the Google Calendar, you can edit it as an average calendar event.
+Another advantage is that you can add directly To Do (Task) items to the converted calendar.
+Note: feed converter must be enabled (feed.enabled=true).<br><br>
+
+<font face="Courier,Monospaced,Teletype" color="gray">
+
+# Google Calendar<br>
+file.ical.path=/home/*/.evolution/calendar/local/*/calendar.ics<br>
+file.google.username=example@gmail.com<br>
+file.google.password=31260V7mc34jV22c<br>
+file.private.ical.url=/calendar/ical/example%40gmail.com/private-495c0f1bfg/basic.ics<br><br>
+
+# BBC Technology RSS News (without username/password)<br>
+file.ical.path<font color="red">2</font>=/home/*/.evolution/calendar/local/*/calendar.ics<br>
+file.private.ical.url<font color="red">2</font>=http://newsrss.bbc.co.uk/rss/newsonline_uk_edition/technology/rss.xml<br><br>
+
+# Twitter ATOM feed (with username/password)<br>
+file.ical.path<font color="red">3</font>=/home/*/.evolution/calendar/local/*/calendar.ics<br>
+file.google.username<font color="red">3</font>=twitterusername<br>
+file.google.password<font color="red">3</font>=9f2cb4j5c0f1V2g<br>
+file.private.ical.url<font color="red">3</font>=http://twitter.com/statuses/user_timeline/feednumber.atom<br>
+
+</font>
+</p>
+
+<a name="fine"></a>
+<font class="header">
+  <img src="images/spot.gif" width="12" height="12" align="absmiddle">&nbsp;&nbsp;<b>Fine adjustment</b>
+</font>
+
+<p align="justify">
+1) If there is no need for HTTP-based synchronization, set the
+'http.enabled' property to 'false' (in 'gcal-daemon.cfg').
+We recommend to set this for the lower memory usage and for the higher security.
+The authentication and the ATOM-based communication between Google and
+GCALDaemon is secure (SSL) and cannot be intercepted by a third party.
+</p>
+
+<p align="justify">
+2) Put a 'work.dir' property into 'conf/gcal-daemon.cfg'
+to specify the work directory of GCALDaemon.
+This directory is the 'GCALDaemon/work' folder by default.
+For people that use multiple operating systems it is handy that the work
+directory is another directory.
+Also, it's more secure if the work files wouldn't reside in the program
+directory but on eg. an encrypted partition.
+Note: After you set up a new directory,
+you may copy the old work folder's content
+into the new one.<br><br>
+
+<font face="Courier,Monospaced,Teletype" color="gray">
+# GCALDaemon's work directory<br>
+work.dir=d:/secure/work<br>
+</font>
+</p>
+
+<a name="compat"></a>
+<font class="header">
+  <img src="images/spot.gif" width="12" height="12" align="absmiddle">&nbsp;&nbsp;<b>Compatibility notes</b>
+</font>
+
+<p align="justify">
+1) Default synchronization:
+iCal alarm property synchronized unidirectionally (move property from iCal to Google Calendar).
+Google Calendar supports discrete alarm values only (5-10-15-20-25-30-45 mins, 1-2-3 hours,
+1-2 days, or one week). GCALDaemon converts different values into such an values
+(e.g. 17 min to 15 min, 6 day to one week, etc).
+Category, priority and URL properties are unsupported by the Google Calendar API.
+</p>
+
+<table border="1" width="90%" align="center" cellspacing="0">
+  <tr bgcolor="#EEEEEE">
+    <th align=left><font size="2" face="Arial,Helvetica">iCalendar event property</font></th>
+    <th align=left><font size="2" face="Arial,Helvetica">Google Calendar event property</font></th>
+    <th align=left><font size="2" face="Arial,Helvetica">Synchronization</font></th>
+  </tr>
+  <tr>  
+    <td><font size="2" face="Arial,Helvetica">summary</font></td>
+    <td><font size="2" face="Arial,Helvetica">title</font></td>
+    <td><font size="2" face="Arial,Helvetica">bidirectionally</font></td>
+  </tr>
+  <tr>  
+    <td><font size="2" face="Arial,Helvetica">location</font></td>
+    <td><font size="2" face="Arial,Helvetica">where</font></td>
+    <td><font size="2" face="Arial,Helvetica">bidirectionally</font></td>
+  </tr>
+  <tr>  
+    <td><font size="2" face="Arial,Helvetica">description</font></td>
+    <td><font size="2" face="Arial,Helvetica">content</font></td>
+    <td><font size="2" face="Arial,Helvetica">bidirectionally</font></td>
+  </tr>
+  <tr>  
+    <td><font size="2" face="Arial,Helvetica">created date</font></td>
+    <td><font size="2" face="Arial,Helvetica">published date</font></td>
+    <td><font size="2" face="Arial,Helvetica">bidirectionally</font></td>
+  </tr>
+  <tr>  
+    <td><font size="2" face="Arial,Helvetica">start date</font></td>
+    <td><font size="2" face="Arial,Helvetica">start date</font></td>
+    <td><font size="2" face="Arial,Helvetica">bidirectionally</font></td>
+  </tr>
+  <tr>  
+    <td><font size="2" face="Arial,Helvetica">end date</font></td>
+    <td><font size="2" face="Arial,Helvetica">end date</font></td>
+    <td><font size="2" face="Arial,Helvetica">bidirectionally</font></td>
+  </tr>
+  <tr>  
+    <td><font size="2" face="Arial,Helvetica">all day event (true / false)</font></td>
+    <td><font size="2" face="Arial,Helvetica">all day event (true / false)</font></td>
+    <td><font size="2" face="Arial,Helvetica">bidirectionally</font></td>
+  </tr>
+  <tr>  
+    <td><font size="2" face="Arial,Helvetica">status (tentative / confirmed / canceled)</font></td>
+    <td><font size="2" face="Arial,Helvetica">status (tentative / confirmed / canceled)</font></td>
+    <td><font size="2" face="Arial,Helvetica">bidirectionally</font></td>
+  </tr>
+  <tr>  
+    <td><font size="2" face="Arial,Helvetica">classification (public / private)</font></td>
+    <td><font size="2" face="Arial,Helvetica">visibility (public / private)</font></td>
+    <td><font size="2" face="Arial,Helvetica">bidirectionally</font></td>
+  </tr>
+  <tr>  
+    <td><font size="2" face="Arial,Helvetica">transparency (transparent / opaque)</font></td>
+    <td><font size="2" face="Arial,Helvetica">transparency (transparent / opaque)</font></td>
+    <td><font size="2" face="Arial,Helvetica">bidirectionally</font></td>
+  </tr>
+  <tr>  
+    <td><font size="2" face="Arial,Helvetica">list of attendees</font></td>
+    <td><font size="2" face="Arial,Helvetica">list of participants</font></td>
+    <td><font size="2" face="Arial,Helvetica">bidirectionally</font></td>
+  </tr>
+  <tr>  
+    <td><font size="2" face="Arial,Helvetica">recurrence rule (including exceptions)</font></td>
+    <td><font size="2" face="Arial,Helvetica">recurrence rule (including exceptions)</font></td>
+    <td><font size="2" face="Arial,Helvetica">bidirectionally</font></td>
+  </tr>
+  <tr>  
+    <td><font size="2" face="Arial,Helvetica">recurrence-id</font></td>
+    <td><font size="2" face="Arial,Helvetica">original event</font></td>
+    <td><font size="2" face="Arial,Helvetica">bidirectionally</font></td>
+  </tr>
+  <tr>  
+    <td><font size="2" face="Arial,Helvetica"><i>alarm</i></font></td>
+    <td><font size="2" face="Arial,Helvetica"><i>reminder</i></font></td>
+    <td><font size="2" face="Arial,Helvetica"><i>one-way only (iCal to Google)</i></font></td>
+  </tr>
+</table>
+
+<p align="justify">
+2) Extended synchronization:
+GCALDaemon is able to synchronize on these four iCalendar property in 'extended mode':
+alarm (two-way), category, priority and URL.
+This is useful if you'd like to sync Google Calendar with your PDA (in dial-up or sync-on-demand mode).
+To enable this feature set the 'extended.sync.enabled' property to 'true'.
+Note: Needless use of the extended mode (especially with large calendars) can significantly reduce the performance.
+
+<br><br><font face="Courier,Monospaced,Teletype" color="gray">
+# Enable to sync alarms, categories, urls and priorities<br>
+extended.sync.enabled=true<br>
+</font>
+</p>
+
+<table border="1" width="90%" align="center" cellspacing="0">
+  <tr bgcolor="#EEEEEE">
+    <th align=left><font size="2" face="Arial,Helvetica">iCalendar event property</font></th>
+    <th align=left><font size="2" face="Arial,Helvetica">Google Calendar event property</font></th>
+    <th align=left><font size="2" face="Arial,Helvetica">Synchronization</font></th>
+  </tr>
+  <tr>  
+    <td><font size="2" face="Arial,Helvetica">alarm</font></td>
+    <td><font size="2" face="Arial,Helvetica">reminder</font></td>
+    <td><font size="2" face="Arial,Helvetica">bidirectionally</font></td>
+  </tr>
+  <tr>  
+    <td><font size="2" face="Arial,Helvetica">category (Business, Birthday, etc)</font></td>
+    <td><font size="2" face="Arial,Helvetica"><i>hidden</i></font></td>
+    <td><font size="2" face="Arial,Helvetica">bidirectionally</font></td>
+  </tr>
+  <tr>  
+    <td><font size="2" face="Arial,Helvetica">priority (low, medium, high)</font></td>
+    <td><font size="2" face="Arial,Helvetica"><i>hidden</i></font></td>
+    <td><font size="2" face="Arial,Helvetica">bidirectionally</font></td>
+  </tr>
+  <tr>  
+    <td><font size="2" face="Arial,Helvetica">URL</font></td>
+    <td><font size="2" face="Arial,Helvetica"><i>hidden</i></font></td>
+    <td><font size="2" face="Arial,Helvetica">bidirectionally</font></td>
+  </tr>
+</table>
+
+<p align="justify">
+3) Google Calendar - unlike Evolution - does not support To Do (Task) items.
+Therefore GCALDaemon stores To Do items in a local file storage.
+This storage is the '<b>GCALDaemon/work</b>' folder.
+
+Before uninstall an older GCALDaemon version, you should archive this directory.
+If the new GCALDaemon installation finishes, you can restore
+the previous 'work' folder, including the old To Do items.
+
+About the 'online' synchronization: to avoid data loss, do not modify
+your local calendar files when GCALDaemon is not running properly (or stopped)
+and the 'file.offline.enabled' property is 'false'.
+
+Note: GCALDaemon automatically creates daily backups of each and every local
+and remote calendar into the 'work/backup' subdirectory,
+so your files are always safe and secure.
+</p>
+
+<p align="center">
+<img src="images/todo.gif" width="500" height="343">
+</p>
+
+<center>
+  <form action="http://sourceforge.net/search/" method="get" class="projectsearch" target="sf">
+    <input type="hidden" name="type_of_search" value="forums"/>
+    <input type="hidden" name="group_id" value="184382"/>
+    <input type="text" value="" size="23" maxlength="60" id="projectsearchbox" name="words"/>
+    <input type="submit" value="Forum Search"/>
+  </form>
+</center>
+
+                      </font>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr height="25">
+       <td>
+
+          <table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+              <td width="150">
+              </td>
+              <td bgcolor="black" align="right">
+                <a href="license.html" class="menu" title="Apache License">
+                  APACHE LICENSE VERSION 2.0
+                </a>
+                <img src="images/empty.gif" width="5" height="25" align="absmiddle">
+              </td>
+            </tr>
+          </table>
+
+       </td>
+      </tr>
+
+    </table>
+  </body>
+</html>

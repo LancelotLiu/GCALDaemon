@@ -1,0 +1,29 @@
+a.nav:link    { text-decoration: none;  color: black;   font-family: Verdana, Arial, Helvetica; font-size: 12px }
+a.nav:visited { text-decoration: none;  color: black;   font-family: Verdana, Arial, Helvetica; font-size: 12px }
+a.nav:hover   { text-decoration: none;  color: #00FF00; font-family: Verdana, Arial, Helvetica; font-size: 12px }
+
+a.link:link    { text-decoration: none;      color: black;   font-family: Verdana, Arial, Helvetica; font-size: 12px }
+a.link:visited { text-decoration: none;      color: black;   font-family: Verdana, Arial, Helvetica; font-size: 12px }
+a.link:hover   { text-decoration: underline; color: black; font-family: Verdana, Arial, Helvetica; font-size: 12px }
+
+a.menu:link    { text-decoration: none; color: green;   font-family: Verdana, Arial, Helvetica; font-size: 12px }
+a.menu:visited { text-decoration: none; color: green;   font-family: Verdana, Arial, Helvetica; font-size: 12px }
+a.menu:hover   { text-decoration: none; color: #00FF00; font-family: Verdana, Arial, Helvetica; font-size: 12px }
+
+.plain  { color: black;   font-family: Verdana, Arial, Helvetica; font-size: 12px }
+.bar    { color: green;   font-family: Verdana, Arial, Helvetica; font-size: 12px }
+.title  { color: #00FF00; font-family: Verdana, Arial, Helvetica; font-size: 16px; font-weight: bold; }
+.header { color: black;   font-family: Verdana, Arial, Helvetica; font-size: 14px; font-weight: bold; }
+
+body {
+ scrollbar-base-color:  #125200;
+ scrollbar-arrow-color: #00FF00;
+ scrollbar-track-color: black;
+
+ scrollbar-shadow-color:      #008800;
+ scrollbar-lightshadow-color: #008800;
+ scrollbar-darkshadow-color:  #008800;
+
+ scrollbar-highlight-color: #008800;
+ scrollbar-3dlight-color:   #008800;
+}

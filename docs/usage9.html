@@ -1,0 +1,458 @@
+<html>
+  <head>
+   <title>GCALDaemon - Setup Gmail transfer agent</title>
+   <meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+   <meta name="keywords"           content="google calendar,ical,icalendar,calendar,sync,synchronize,two-way,bidirectional">
+   <link rel="alternate"     href="http://sourceforge.net/export/rss2_projnews.php?group_id=184382" type="application/rss+xml" title="GCALDaemon News"/>
+   <link rel="stylesheet"    href="stylesheet.css" type="text/css"/>
+   <link rel="icon"          href="favicon.ico"    type="image/x-icon"/>
+   <link rel="shortcut icon" href="favicon.ico"    type="image/x-icon"/>
+  </head>
+  <body topmargin="0" marginwidth="0" marginheight="0" leftmargin="0" bgcolor="#0C3400" link="#000000" vlink="#000000" background="images/raster.gif">
+    <table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0">
+
+      <tr bgcolor="black" height="40">
+        <td background="images/greenline.gif">
+          <table width="99%" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+              <td width="180">
+                <a href="http://gcaldaemon.sourceforge.net"><img src="images/logo.gif" width="180" height="40" alt="GCALDaemon Project Home" border="0"></a>
+              </td>
+              <td width="100%" align="right" valign="top">
+                <font class="bar">
+                  <a href="http://gcaldaemon.sourceforge.net" class="menu" title="Project Home of Google Calendar Synchronizer Daemon">
+                  home
+                  </a>
+                  |
+                  <a href="http://sourceforge.net/forum/?group_id=184382" class="menu" title="Forums to discuss your technical problems">
+                  forums
+                  </a>
+                  |
+                  <a href="http://sourceforge.net/sendmessage.php?touser=1664061" class="menu" title="Contact Us">
+                  contact
+                  </a>
+                  |
+                  <a href="http://sourceforge.net/export/rss2_projnews.php?group_id=184382" class="menu" title="Project News">
+                  rss
+                  </a>
+                  |
+                  <a href="http://sourceforge.net/project/stats/?group_id=184382&ugn=gcaldaemon" class="menu" title="Statistics">
+                  stats
+                  </a>
+                  |
+                  <a href="http://sourceforge.net/donate/index.php?group_id=184382" class="menu" title="Donations to GCALDaemon support the continues development of the project">
+                  donate
+                  </a>
+                </font>
+              </td>
+            </tr>
+          </table>
+       </td>
+      </tr>
+
+      <tr height="25">
+       <td>
+
+          <table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+              <td width="150">
+              </td>
+              <td bgcolor="black">
+                <font class="title">
+                  <b><img src="images/empty.gif" width="1" height="25" align="absmiddle">
+
+::Usage
+
+                  </b>
+                </font>
+              </td>
+            </tr>
+          </table>
+
+       </td>
+      </tr>
+
+      <tr height="100%">
+        <td>
+
+          <table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+              <td width="150">
+
+               <table width="150" height="100%" cellspacing="0" cellpadding="0" border="0">
+                 <tr bgcolor="black">
+                   <td width="100%" align="right" bgcolor="black"><img src="images/empty.gif" width="1" height="25"><table width="125" cellspacing="0" cellpadding="0" border="0">
+
+<tr bgcolor="#009000">
+  <td valign="bottom" background="images/line.gif"><img src="images/tab.gif" width="5" height="25" align="absmiddle">
+    <a href="index.html" class="nav" title="Project Home of Google Calendar Synchronizer Daemon">
+      Home
+    </a>
+  </td>
+</tr>
+
+<tr bgcolor="#009000">
+  <td valign="bottom" background="images/line.gif"><img src="images/tab.gif" width="5" height="25" align="absmiddle">
+    <a href="features.html" class="nav" title="Learn about the key features included in GCALDaemon">
+      Features
+    </a>
+  </td>
+</tr>
+
+<tr bgcolor="#009000">
+  <td valign="bottom" background="images/line.gif"><img src="images/tab.gif" width="5" height="25" align="absmiddle">
+    <a href="screenshots.html" class="nav" title="Here are some screenshots of GCALDaemon in action">
+      Screenshots
+    </a>
+  </td>
+</tr>
+
+<tr bgcolor="#009000">
+  <td valign="bottom" background="images/line.gif"><img src="images/tab.gif" width="5" height="25" align="absmiddle">
+    <a href="download.html" class="nav" title="Downloads including source and documentation">
+      Downloads
+    </a>
+  </td>
+</tr>
+
+<tr bgcolor="white">
+  <td valign="bottom" background="images/line.gif"><img src="images/tab.gif" width="5" height="25" align="absmiddle">
+    <font class="plain">
+      User's Guide
+    </font>
+  </td>
+</tr>
+
+<tr bgcolor="#009000">
+  <td valign="bottom" background="images/line.gif"><img src="images/tab.gif" width="5" height="25" align="absmiddle">
+    <a href="integration.html" class="nav" title="Developer's Guide">
+      For Developers
+    </a>
+  </td>
+</tr>
+
+<tr bgcolor="#009000">
+  <td valign="bottom" background="images/line.gif"><img src="images/tab.gif" width="5" height="25" align="absmiddle">
+    <a href="license.html" class="nav" title="Apache License V2">
+      License
+    </a>
+  </td>
+</tr>
+
+                     </table><img src="images/empty.gif" width="1" height="25"></td>
+                 </tr>
+                 <tr height="100%"><td valign="bottom" align="center">
+<a href="http://sourceforge.net/donate/index.php?group_id=184382" title="Donations to GCALDaemon support the continues development of the project"><img src="images/support.gif" width="85" height="32" border="0"></a>
+                 </td></tr>
+               </table>
+  
+              </td>
+              <td bgcolor="white" valign="top">
+                <table border="0" cellpadding="10" cellspacing="0" width="100%" height="100%">
+                  <tr>
+                    <td valign="top">
+                      <font class="plain">
+
+<font class="header">
+  <img src="images/spot.gif" width="12" height="12" align="absmiddle">&nbsp;&nbsp;<b>Guides</b>
+</font>
+
+<ul>
+
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage10.html" class="link" title="XP installation guide">Installation on Windows NT/2000/XP</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage17.html" class="link" title="Vista guide">Installation on Windows Vista</a><br>
+
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage11.html" class="link" title="Linux installation guide">Installation on Linux/Unix/AIX</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage12.html" class="link" title="Mac OS X installation guide">Installation on Mac OS X</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage15.html" class="link" title="Servlet installation guide">Deploy on Apache Tomcat</a><br><br>
+
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage.html" class="link" title="Sync Google Calendar with Sunbird">Sync Google Calendar with Sunbird (HTTP-based synchronization)</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage13.html" class="link" title="Sync Google Calendar with iCal">Sync Google Calendar with Apple iCal (file-based synchronization)</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage16.html" class="link" title="Sync Google Calendar with Evolution">Sync Google Calendar with Evolution (file-based synchronization)</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage2.html" class="link" title="Sync Google Calendar with Rainlendar">Sync Google Calendar with Rainlendar (file-based synchronization)</a><br><br>
+
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage4.html" class="link" title="Import Gmail contacts via LDAP">Access Gmail contacts from Mozilla Thunderbird (LDAP server)</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage5.html" class="link" title="Import Gmail contacts via LDAP">Access Gmail contacts from Lotus Notes (LDAP server)</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage6.html" class="link" title="Import Gmail contacts via LDAP">Access Gmail contacts from Outlook Express (LDAP server)</a><br><br>
+
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage8.html" class="link" title="Setup Gmail notifier">Setup Gmail notifier</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="#top" class="link" title="Send text files via Gmail">Sending text and HTML files via Gmail (sendmail)</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage14.html" class="link" title="Execute scripts via email messages">Remote control your computer using Gmail (mailterm)</a><br>
+
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage3.html" class="link" title="Convert RSS/ATOM feed to ICS">Read RSS and ATOM feeds with your calendar application (feed converter)</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="usage7.html" class="link" title="Accelerating news readers">Caching RSS and ATOM news (feed cache)</a><br>
+
+</ul>
+<a name="top"></a>
+<font class="header">
+  <img src="images/spot.gif" width="12" height="12" align="absmiddle">&nbsp;&nbsp;<b>Setup Gmail sender service</b>
+</font>
+<ul>
+
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="#setup" class="link" title="Setup sendmail service">Configure sendmail</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="#text"  class="link" title="Sending plain text messages">Sending structured text messages</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="#xml"   class="link" title="Sending XML messages">Sending XML messages</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="#java"  class="link" title="Java sample">Sending messages from your application</a><br>
+  <img src="images/arrow.gif" align="top" width="10" height="13">&nbsp;&nbsp;<a href="#fine"  class="link" title="Fine adjustment">Fine adjustment</a>
+
+</ul>
+
+<p align="justify">
+The GCALDaemon's Gmail sender is a mail transfer agent that polls a local folder for new messages.
+When a new message is found, the service sends your plain text or HTML files
+without your having to open your e-mail client.
+With this solution you can send Gmail messages directly and easily from your text editor or from your application.
+</p>
+
+<p align="center">
+<img src="images/arch8.gif" width="585" height="196">
+</p>
+
+<a name="setup"></a>
+<font class="header">
+  <img src="images/spot.gif" width="12" height="12" align="absmiddle">&nbsp;&nbsp;<b>Configure sendmail</b>
+</font>
+
+<p align="left">
+
+1) <a href="usage10.html" class="nav"><b>Install</b> GCALDaemon (Java 1.5 required).</a><br><br>
+
+2) <b>Enable</b> Gmail's SMTP service.<br><br>
+
+A) Log in to your Gmail account.<br>
+B) Click Settings at the top of any Gmail page.<br>
+C) Click Forwarding and POP/IMAP.<br>
+D) Select Enable IMAP.<br>
+E) Click Save Changes.
+
+<p align="justify">If you've enabled the IMAP service, you can also use the SMTP service.
+If you don't have 'Enable IMAP' option and your default language is <b>not US English</b>,
+changing Gmail display language to US English in General
+settings is likely to IMAP enable your Gmail.</p>
+
+3) Start <b>password encoder</b> ('password-encoder.bat' or 'password-encoder.sh').
+Input your Gmail password and press ENTER. Copy the encoded password.
+</p>
+
+<p align="center">
+<img src="images/encoder.gif" width="549" height="210">
+</p>
+
+<p align="left">
+4) Edit the 'gcal-daemon.cfg' file with your text editor.<br><br>
+
+A) Set the 'sendmail.enabled' property to 'true'<br>
+B) Set the 'sendmail.google.username' property to your Gmail address<br>
+C) Set the 'sendmail.google.password' property to your encoded password<br><br>
+
+Optionally, set the 'sendmail.dir.path' property to refer to the outgoing mail folder.
+</p>
+
+<p align="center">
+<img src="images/sendmail4.gif" width="528" height="298">
+</p>
+
+<p align="left">
+5) Setup finished - start GCALDaemon with 'standalone-start.bat' or 'standalone-start.sh'.
+</p>
+
+<p align="center">
+<img src="images/sendmail5.gif" width="559" height="178">
+</p>
+
+<p align="left">
+6) Open your text editor, and create a short test message.
+Save this test message into your outgoing mail directory (/outbox) named <i>recipient@company.com</i>
+(you must enter a <b>valid email address</b>).
+</p>
+
+<p align="center">
+<img src="images/sendmail3.gif" width="600" height="555">
+</p>
+
+<p align="left">
+7) GCALDaemon submits your mail within 10-15 seconds.
+</p>
+
+<p align="center">
+<img src="images/sendmail1.gif" width="600" height="438">
+</p>
+
+<p align="left">
+8) You can send HTML files in a similar manner, or a simple copy/paste/rename command.
+</p>
+
+<p align="center">
+<img src="images/sendmail2.gif" width="600" height="428">
+</p>
+
+<a name="text"></a>
+<font class="header">
+  <img src="images/spot.gif" width="12" height="12" align="absmiddle">&nbsp;&nbsp;<b>Sending structured text messages</b>
+</font>
+
+<p align="left">
+You can add special email properties to your message. The valid properties are:
+<li><b>TO</b> - Comma-separated list of primary recipients (optional, default: sender or filename)</li>
+<li><b>CC</b> - Comma-separated list of subsidiary recipients (carbon copy, optional)</li>
+<li><b>BCC</b> - Comma-separated list of BCC recipients (blind carbon copy, optional)</li>
+<li><b>SUBJECT</b> - Title of the email (optional, default: "Mail from &lt;sender&gt;")</li>
+<li><b>ENCODING</b> - Character encoding of the mail (optional, default: platform-specific)</li>
+</p>
+
+<p align="justify">
+All property are optional and case insensitive, the name of the text file doesn't matter
+(recipients determined by the file's content). Use "UTF-8" encoding for special characters,
+otherwise use "ISO-8859-1", "ISO-8859-2", "US-ASCII" or other standard encoding. You can use HTML formatter
+tags like <b>&lt;b&gt;, &lt;i&gt;, &lt;font...&gt;, &lt;color...&gt;, &lt;center&gt;, &lt;br/&gt;</b>, etc.
+GCALDaemon autodetects HTML tags in the
+message's body, and changes the mail's content type to "text/html". Note: do not include
+entire HTML pages, with &lt;html&gt;, &lt;head&gt; and &lt;body&gt; parts -
+only the formatter tags are allowed.
+</p>
+
+<p align="center">
+<img src="images/sendmail6.gif" width="452" height="232">
+</p>
+
+<a name="xml"></a>
+<font class="header">
+  <img src="images/spot.gif" width="12" height="12" align="absmiddle">&nbsp;&nbsp;<b>Sending XML messages</b>
+</font>
+
+<p align="justify">
+If the file starts with an XML header ('&lt;?xml...'), then it processed as an XML file.
+GCALDaemon detects file encoding by the XML header's encoding property.
+All descriptions of the properties are same as attributes/properties associated with structured text messages.
+GCALDaemon detects HTML tags in the &lt;body&gt; element, and changes the mail's content type to "text/html".
+GCALDaemon ignores all unknown/undefined XML attributes, elements, CDATA sections, namespaces, etc.
+</p>
+
+<p align="center">
+<img src="images/sendmail7.gif" width="452" height="232">
+</p>
+
+<a name="java"></a><br>
+<font class="header">
+  <img src="images/spot.gif" width="12" height="12" align="absmiddle">&nbsp;&nbsp;<b>Sending messages from your application</b>
+</font>
+
+<p align="justify">
+Writing files is actually fairly easy in all programming languages and scripts.
+More easier than implement the a new mail sender (connection pool,
+SSL communicator, character and password encoder, firewall handler, etc) from scratch.
+You can save your time by using GCALDaemon's mail transfer agent to create
+your own home application.
+Sample Java code:
+</p>
+
+<p align="left">
+<font size="1" face="Courier,Monospaced,Teletype" color="gray">
+//&nbsp;Mail&nbsp;parameters<br>
+String&nbsp;to&nbsp;=&nbsp;"recipient@sample.mail.com";<br>
+String&nbsp;subject&nbsp;=&nbsp;"Mail's&nbsp;subject";<br>
+String&nbsp;body&nbsp;=&nbsp;"This&nbsp;is&nbsp;the&nbsp;body&nbsp;of&nbsp;my&nbsp;mail&nbsp;message.";<br>
+<br>
+//&nbsp;Create&nbsp;file's&nbsp;content<br>
+String&nbsp;mail&nbsp;=&nbsp;"ENCODING:UTF-8\r\nTO:"&nbsp;+&nbsp;to&nbsp;+&nbsp;"\r\nSUBJECT:"&nbsp;+&nbsp;subject<br>
+&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;"\r\n"&nbsp;+&nbsp;body;<br>
+byte[]&nbsp;bytes&nbsp;=&nbsp;mail.getBytes("UTF8");<br>
+String&nbsp;path&nbsp;=&nbsp;"/outbox/"&nbsp;+&nbsp;System.currentTimeMillis()<br>
+&nbsp;&nbsp;&nbsp;&nbsp;+&nbsp;mail.hashCode()&nbsp;+&nbsp;".txt";<br>
+<br>
+//&nbsp;Save&nbsp;file<br>
+RandomAccessFile&nbsp;file&nbsp;=&nbsp;null;<br>
+try&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;file&nbsp;=&nbsp;new&nbsp;RandomAccessFile(path,&nbsp;"rw");<br>
+&nbsp;&nbsp;&nbsp;file.write(bytes);&nbsp;&nbsp;<br>
+}&nbsp;finally&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;if&nbsp;(file&nbsp;!=&nbsp;null)&nbsp;{<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;file.close();<br>
+&nbsp;&nbsp;&nbsp;}<br>
+}
+</font>
+</p>
+
+<a name="fine"></a>
+<font class="header">
+  <img src="images/spot.gif" width="12" height="12" align="absmiddle">&nbsp;&nbsp;<b>Fine adjustment</b>
+</font>
+
+<p align="justify">
+1) If you use <b>Google Apps For Your Domain</b> you may need to clear a captcha for your email account.
+Visit<br><br>
+
+<a href="https://www.google.com/a/yourdomain.org/UnlockCaptcha" target="new" class="link"><font face="Courier,Monospaced,Teletype" color="gray">https://www.google.com/a/<b>yourdomain.org</b>/UnlockCaptcha</font></a>
+
+<br><br>then enter your email username and password, and the letters in the distorted picture.
+Be sure to replace 'yourdomain.org' with your domain name.
+</p>
+
+<p align="justify">
+2) Optionally start the 'service-install.bat' to install GCALDaemon as Windows service
+(on <b>UNIX-compatible</b> systems put GCALDaemon into 'init', 'launchd' or 'rc' script).
+Before uninstall GCALDaemon, you must stop and uninstall this service
+(with 'service-stop.bat' and 'service-uninstall.bat').
+Please note, this is the last step in the setup/configuration process,
+do not install the service while GCALDaemon is not running properly.
+On <b>Vista</b>, it's not enough to be in the Administrators group,
+you need to either be actually logged on as the Administrator.
+
+<br><br><font face="Courier,Monospaced,Teletype" color="gray">
+A) In START menu click on the 'Command Prompt'<br>
+B) Right click on it and select 'Properties'<br>
+C) In 'Shortcut' tab, click on 'Advanced...'<br>
+D) Tick the 'Run as Administrator'<br>
+E) Run 'Command Prompt' and in click 'Continue' in 'User Account Control' box<br>
+F) Now you are in administrator mode<br>
+G) Type 'cd <i>[gcaldaemon installation directory]</i>\bin'<br>
+H) Execute 'service-install.bat'<br>
+I) Execute 'service-start.bat'
+</font>
+</p>
+
+<p align="center">
+<img src="images/screenshot2.gif" width="600" height="418">
+</p>
+
+<center>
+  <form action="http://sourceforge.net/search/" method="get" class="projectsearch" target="sf">
+    <input type="hidden" name="type_of_search" value="forums"/>
+    <input type="hidden" name="group_id" value="184382"/>
+    <input type="text" value="" size="23" maxlength="60" id="projectsearchbox" name="words"/>
+    <input type="submit" value="Forum Search"/>
+  </form>
+</center>
+
+                      </font>
+                    </td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+      </tr>
+
+      <tr height="25">
+       <td>
+
+          <table width="100%" height="100%" cellspacing="0" cellpadding="0" border="0">
+            <tr>
+              <td width="150">
+              </td>
+              <td bgcolor="black" align="right">
+                <a href="license.html" class="menu" title="Apache License">
+                  APACHE LICENSE VERSION 2.0
+                </a>
+                <img src="images/empty.gif" width="5" height="25" align="absmiddle">
+              </td>
+            </tr>
+          </table>
+
+       </td>
+      </tr>
+
+    </table>
+  </body>
+</html>

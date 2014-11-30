@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry path="src" kind="src"/>
+	<classpathentry path="org.eclipse.jdt.launching.JRE_CONTAINER" kind="con"/>
+	<classpathentry path="C:/Progra~1/GCALDaemon/lib/gdata-client.jar" kind="lib"/>
+	<classpathentry path="C:/Progra~1/GCALDaemon/lib/gdata-calendar.jar" kind="lib"/>
+	<classpathentry path="C:/Progra~1/GCALDaemon/lib/commons-codec.jar" kind="lib"/>
+	<classpathentry path="C:/Progra~1/GCALDaemon/lib/commons-lang.jar" kind="lib"/>
+	<classpathentry path="C:/Progra~1/GCALDaemon/lib/commons-logging.jar" kind="lib"/>
+	<classpathentry path="C:/Progra~1/GCALDaemon/lib/ical4j.jar" kind="lib"/>
+	<classpathentry path="C:/Progra~1/GCALDaemon/lib/wrapper.jar" kind="lib"/>
+	<classpathentry path="C:/Progra~1/GCALDaemon/lib/jdom.jar" kind="lib"/>
+	<classpathentry path="C:/Progra~1/GCALDaemon/lib/rome.jar" kind="lib"/>
+	<classpathentry path="C:/Progra~1/GCALDaemon/lib/commons-httpclient.jar" kind="lib"/>
+	<classpathentry path="C:/Progra~1/GCALDaemon/lib/commons-collections.jar" kind="lib"/>
+	<classpathentry path="C:/Progra~1/GCALDaemon/lib/logger.jar" kind="lib"/>
+	<classpathentry path="C:/Progra~1/GCALDaemon/lib/shared-asn1.jar" kind="lib"/>
+	<classpathentry path="C:/Progra~1/GCALDaemon/lib/shared-ldap.jar" kind="lib"/>
+	<classpathentry path="C:/Progra~1/GCALDaemon/lib/commons-io.jar" kind="lib"/>
+	<classpathentry path="C:/Progra~1/GCALDaemon/lib/servlet-api.jar" kind="lib"/>
+	<classpathentry path="C:/Progra~1/GCALDaemon/lib/mail.jar" kind="lib"/>
+	<classpathentry path="C:/Progra~1/GCALDaemon/lib/activation.jar" kind="lib"/>
+	<classpathentry path="classes" kind="output"/>
+</classpath>
