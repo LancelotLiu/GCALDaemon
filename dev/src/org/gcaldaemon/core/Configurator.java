@@ -58,7 +58,7 @@ public final class Configurator {
 
 	// --- COMMON CONSTANTS ---
 
-	public static final String VERSION = "GCALDaemon V1.0 beta 16";
+	public static final String VERSION = "GCALDaemon V1.0 alpha 17";
 
 	public static final byte MODE_DAEMON = 0;
 	public static final byte MODE_RUNONCE = 1;

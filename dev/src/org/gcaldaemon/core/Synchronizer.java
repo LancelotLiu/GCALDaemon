@@ -32,7 +32,7 @@ import org.apache.commons.logging.Log;
 import org.apache.commons.logging.LogFactory;
 import org.gcaldaemon.logger.QuickWriter;
 
-import com.google.gdata.data.calendar.CalendarEventEntry;
+import com.google.api.services.calendar.model.Event;
 
 /**
  * Main synchronizer thread.
@@ -190,7 +190,7 @@ final class Synchronizer extends Thread {
 
 		// Create processing variables
 		boolean remoteEventChanged;
-		CalendarEventEntry entry;
+		Event entry;
 		String uid, remoteUID;
 		long remoteDate;
 		Long storedDate;

@@ -217,9 +217,9 @@ public final class FilePage extends AbstractPage implements ActionListener,
 		AccountInfo[] infos = config.getAccounts();
 		String username;
 		FileHeaderContent[] headers = new FileHeaderContent[2];
-		headers[0] = new FileHeaderContent(Messages
-				.getString("google.calendar"), editor //$NON-NLS-1$
-				.getIcon("gcal")); //$NON-NLS-1$
+		headers[0] = new FileHeaderContent(
+				Messages.getString("google.calendar"), editor //$NON-NLS-1$
+						.getIcon("gcal")); //$NON-NLS-1$
 		headers[1] = new FileHeaderContent(
 				Messages.getString("ical.calendar"), editor //$NON-NLS-1$
 						.getIcon("ical")); //$NON-NLS-1$
@@ -231,9 +231,9 @@ public final class FilePage extends AbstractPage implements ActionListener,
 				username = infos[i].username;
 			} else {
 				username = Messages.getString("news.and.blogs"); //$NON-NLS-1$
-				headers[0] = new FileHeaderContent(Messages
-						.getString("rss.atom.feed"), editor //$NON-NLS-1$
-						.getIcon("rss")); //$NON-NLS-1$
+				headers[0] = new FileHeaderContent(
+						Messages.getString("rss.atom.feed"), editor //$NON-NLS-1$
+								.getIcon("rss")); //$NON-NLS-1$
 			}
 			JTable table = new JTable();
 			table.setSelectionMode(ListSelectionModel.SINGLE_SELECTION);
@@ -281,8 +281,8 @@ public final class FilePage extends AbstractPage implements ActionListener,
 			popup.add(editMenu);
 
 			popup.addSeparator();
-			JMenuItem accountsMenu = new JMenuItem(Messages
-					.getString("google.accounts")); //$NON-NLS-1$
+			JMenuItem accountsMenu = new JMenuItem(
+					Messages.getString("google.accounts")); //$NON-NLS-1$
 			accountsMenu.setName(ACCOUNTS_MENU);
 			accountsMenu.setIcon(editor.getIcon("account")); //$NON-NLS-1$
 			accountsMenu.addActionListener(this);
@@ -313,19 +313,20 @@ public final class FilePage extends AbstractPage implements ActionListener,
 							row[0] = name + " - " + row[0]; //$NON-NLS-1$
 						}
 					}
-					if (row[0].endsWith(".ics")) { //$NON-NLS-1$
-						row[1] = fileSync.icalPath;
-						if (row[1] == null) {
-							row[1] = UNDEFINED;
-						} else {
-							name = config.getCalendarName(row[1]);
-							if (name != null) {
-								row[1] = name + " - " + row[1]; //$NON-NLS-1$
-							}
+					// 抓不到 ics 了
+					// if (row[0].endsWith(".ics")) { //$NON-NLS-1$
+					row[1] = fileSync.icalPath;
+					if (row[1] == null) {
+						row[1] = UNDEFINED;
+					} else {
+						name = config.getCalendarName(row[1]);
+						if (name != null) {
+							row[1] = name + " - " + row[1]; //$NON-NLS-1$
 						}
-						model.addRow(row);
-						continue;
 					}
+					model.addRow(row);
+					continue;
+					// }
 				}
 			}
 			model = (FileTableModel) models.get(NEWS_AND_BLOGS_KEY);

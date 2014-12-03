@@ -12,7 +12,7 @@
 //
 package org.gcaldaemon.core;
 
-import com.google.gdata.client.calendar.CalendarService;
+import com.google.api.services.calendar.Calendar;
 
 /**
  * Pooled Google connection (used in GoogleUtilities object).
@@ -31,6 +31,6 @@ final class PooledGoogleService {
 	/**
 	 * Cached Google connection
 	 */
-	CalendarService service;
+	Calendar service;
 
 }
