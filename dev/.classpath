@@ -48,5 +48,6 @@
 	<classpathentry kind="lib" path="lib/calendar/libs/jetty-util-6.1.26.jar"/>
 	<classpathentry kind="lib" path="lib/calendar/libs/jsr305-1.3.9.jar"/>
 	<classpathentry kind="lib" path="lib/calendar/libs/transaction-api-1.1.jar"/>
+	<classpathentry kind="lib" path="etc"/>
 	<classpathentry kind="output" path="classes"/>
 </classpath>
