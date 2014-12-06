@@ -12,6 +12,6 @@
 <listEntry value="org.eclipse.debug.ui.launchGroup.run"/>
 </listAttribute>
 <stringAttribute key="org.eclipse.jdt.launching.MAIN_TYPE" value="org.gcaldaemon.standalone.Main"/>
-<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="/Progra~1/GCALDaemon/conf/gcal-daemon.cfg runonce"/>
+<stringAttribute key="org.eclipse.jdt.launching.PROGRAM_ARGUMENTS" value="/Progra~2/GCALDaemon/conf/gcal-daemon.cfg runonce"/>
 <stringAttribute key="org.eclipse.jdt.launching.PROJECT_ATTR" value="GCALDaemon"/>
 </launchConfiguration>
