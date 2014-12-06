@@ -216,23 +216,35 @@ public final class ICalUtilities {
 
 	static final VTimeZone[] getTimeZones(Calendar calendar) throws Exception {
 		ComponentList zoneList = calendar.getComponents(Component.VTIMEZONE);
-		VTimeZone[] zones = new VTimeZone[zoneList.size()];
-		zoneList.toArray(zones);
-		return zones;
+		if (zoneList != null && zoneList.size() > 0) {
+			VTimeZone[] zones = new VTimeZone[zoneList.size()];
+			zoneList.toArray(zones);
+			return zones;
+		} else {
+			return null;
+		}
 	}
 
 	static final VEvent[] getEvents(Calendar calendar) throws Exception {
 		ComponentList eventList = calendar.getComponents(Component.VEVENT);
-		VEvent[] events = new VEvent[eventList.size()];
-		eventList.toArray(events);
-		return events;
+		if (eventList != null && eventList.size() > 0) {
+			VEvent[] events = new VEvent[eventList.size()];
+			eventList.toArray(events);
+			return events;
+		} else {
+			return null;
+		}
 	}
 
 	static final VToDo[] getToDos(Calendar calendar) throws Exception {
 		ComponentList toDoList = calendar.getComponents(Component.VTODO);
-		VToDo[] toDos = new VToDo[toDoList.size()];
-		toDoList.toArray(toDos);
-		return toDos;
+		if (toDoList != null && toDoList.size() > 0) {
+			VToDo[] toDos = new VToDo[toDoList.size()];
+			toDoList.toArray(toDos);
+			return toDos;
+		} else {
+			return null;
+		}
 	}
 
 	// --- ICAL FILE COMPARATOR ---

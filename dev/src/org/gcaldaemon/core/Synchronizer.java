@@ -275,7 +275,8 @@ final class Synchronizer extends Thread {
 					// FIXME If a 'reminder' changes in GCal singly,
 					// Google Calendar does NOT update the LAST_MODIFIED
 					// timestamp. Otherwise this comparison works.
-					remoteEventChanged = storedDate.longValue() != remoteDate;
+					// there is no ms info in ics file
+					remoteEventChanged = storedDate.longValue() != remoteDate / 1000 * 1000;
 				}
 				if (remoteEventChanged) {
 

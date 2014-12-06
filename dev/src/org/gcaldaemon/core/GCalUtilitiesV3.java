@@ -153,8 +153,7 @@ public final class GCalUtilitiesV3 {
 	private static HttpTransport httpTransport;
 	private static final JsonFactory JSON_FACTORY = JacksonFactory
 			.getDefaultInstance();
-	private static final java.io.File DATA_STORE_DIR = new java.io.File(
-			"store");
+	private static final java.io.File DATA_STORE_DIR = new java.io.File("store");
 	private static final String APPLICATION_NAME = "gcaldaemon_v3";
 
 	static {
@@ -226,8 +225,9 @@ public final class GCalUtilitiesV3 {
 	private static Credential authorize() throws Exception {
 		// load client secrets
 		GoogleClientSecrets clientSecrets = GoogleClientSecrets.load(
-				JSON_FACTORY, new InputStreamReader(new FileInputStream(
-						"client_secrets.json")));
+				JSON_FACTORY,
+				new InputStreamReader(ClassLoader.getSystemClassLoader()
+						.getResourceAsStream("client_secrets.json")));
 		if (clientSecrets.getDetails().getClientId().startsWith("Enter")
 				|| clientSecrets.getDetails().getClientSecret()
 						.startsWith("Enter ")) {
@@ -1049,7 +1049,7 @@ public final class GCalUtilitiesV3 {
 		// entry.setCanEdit(true);
 		// entry.setDraft(new Boolean(false));
 		// entry.setQuickAdd(false);
-		entry.setUpdated(new DateTime(new Date(), UTC));
+		entry.setUpdated(new DateTime(System.currentTimeMillis()));
 		// entry.setSendEventNotifications(sendInvitations);
 		String text;
 
@@ -1150,10 +1150,8 @@ public final class GCalUtilitiesV3 {
 		// Set when
 		boolean isAllDay = startDate.toString().indexOf('T') == -1;
 		if (isAllDay) {
-			entry.setStart(new EventDateTime().setDate(new DateTime(isAllDay,
-					startDate.getTime(), 0)));
-			entry.setEnd(new EventDateTime().setDate(new DateTime(isAllDay,
-					endDate.getTime(), 0)));
+			entry.setStart(new EventDateTime().setDate(toDateTime(startDate)));
+			entry.setEnd(new EventDateTime().setDate(toDateTime(endDate)));
 		} else {
 			entry.setStart(new EventDateTime()
 					.setDateTime(toDateTime(startDate)));
@@ -1390,7 +1388,7 @@ public final class GCalUtilitiesV3 {
 		calendar.set(GregorianCalendar.MINUTE, 0);
 		calendar.set(GregorianCalendar.SECOND, 0);
 		calendar.set(GregorianCalendar.MILLISECOND, 0);
-		DateTime dateTime = new DateTime(calendar.getTime(), UTC);
+		DateTime dateTime = new DateTime(true, calendar.getTime().getTime(), 0);
 		return dateTime;
 	}
 
@@ -1574,8 +1572,7 @@ public final class GCalUtilitiesV3 {
 			if (enableExtensions) {
 				Reminders reminders = oldEntry.getReminders();
 				if (reminders != null && !reminders.isEmpty()) {
-					// FIXME 從 List 變成 Map 了，不確定透過 Overrides 取出來的是否和原本的 Reminder
-					// 一樣
+					// FIXME
 					extensionMap.put(uid + "\ta",
 							reminders.getOverrides().get(0));
 				}
