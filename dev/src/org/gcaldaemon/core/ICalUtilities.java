@@ -221,7 +221,7 @@ public final class ICalUtilities {
 			zoneList.toArray(zones);
 			return zones;
 		} else {
-			return null;
+			return new VTimeZone[0];
 		}
 	}
 
@@ -232,7 +232,7 @@ public final class ICalUtilities {
 			eventList.toArray(events);
 			return events;
 		} else {
-			return null;
+			return new VEvent[0];
 		}
 	}
 
@@ -243,7 +243,7 @@ public final class ICalUtilities {
 			toDoList.toArray(toDos);
 			return toDos;
 		} else {
-			return null;
+			return new VToDo[0];
 		}
 	}
 
